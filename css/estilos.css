@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;900&display=swap');
+
+/* Reset selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Estilo general del Sitio (fondo, títulos, etc) */
+.estiloGral{
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 250px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+h1{
+    text-align: center;
+    padding: 40px 20px;
+    margin: auto;
+    color: #490000;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2{
+    text-align: center;
+    padding: 40px 20px;
+    margin: auto;
+    color: #890000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Barra de Navegación */
+nav{
+    display: flex;
+    position: fixed;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.507), rgb(141, 0, 0));
+    width: 100%;
+    height: 80px;
+    }
+
+.enlaceLogo{
+    padding: 5px 5px;
+    justify-content: left;
+}
+
+.logo{
+    height: 70px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 0 auto;
+}
+
+nav ul li a{
+    font-family: inherit;
+    font-size: 15px;
+    color: #fff;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+
+/* nav{
+    position: fixed;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.507), rgb(141, 0, 0));
+    top: 0;
+    height: 80px;
+    width: 100%;
+}
+
+.enlaceLogo{
+    position: absolute;
+    padding: 5px 5px;
+}
+
+.logo{
+    height: 70px;
+    max-height: 70px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 15px;
+}
+
+nav ul li a{
+    font-family: inherit;
+    font-size: 15px;
+    color: #fff;
+    padding-right: 10px;
+    text-transform: uppercase;
+} */
+
+
+/* Bienvenida */
+.contenido{
+    line-height: 2;
+    font-size: large;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 3em 1.5em;
+}
+
+.btn{
+    text-align: center;
+    background-color: #680000;
+    border: rgba(121, 3, 3, 0.489);
+    border-style: ridge;
+    height: 30px;
+    margin: 20px;
+}
+
+.btn a{
+    font-family: inherit;
+    color: #fff;
+    padding: 20px;
+}
+
+
+/* Botón de WhatsApp */
+.btn__wapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+/* Banner */
+.parallax_banner{
+    width: 100%;
+    height: 300px;
+    background: center fixed no-repeat url("../assets/dojoPanorámica.jpg") ;
+    background-size: cover;
+    margin-bottom: 0.5em;
+    margin: 0;
+}
+
+.h2--blanco{
+    text-align: center;
+    padding: 40px 20px;
+    margin: auto;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px black;
+}
+
+
+/* Articulos Varios */
+.container__article{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 30px auto;
+    padding: 3em 1.5em;
+    background-color: rgb(196, 196, 196);
+}
+
+.container__article--title{
+    justify-content: center;
+    align-content: center;
+}
+
+.columna{
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    height: 350px;
+    padding: 30px;
+    margin: 30px;
+    background-color: rgba(233, 233, 233, 0.675);
+    border-radius: 10px;
+    border: 5px solid rgb(54, 54, 54);
+}
+
+.columna__texto{
+    font-size: medium;
+    margin:0px;
+    padding: 20px 0px;
+    overflow: hidden;
+    line-height: 2em;
+}
+
+.btn--gris{
+    text-align: center;
+    background-color: #858585;
+    border: rgba(54, 16, 16, 0.489);
+    border-style: ridge;
+    height: 30px;
+    margin: 20px;
+}
+
+.btn--gris a{
+    font-family: inherit;
+    color: #fff;
+    padding: 20px;
+}
+
+
+/* Formulario */
+
+.form{
+    background-color: #dfdfdf;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    border-radius: .5em;
+    padding: 3.5em 1.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.form__container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.form__title{
+    text-align: center;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+.form__input{
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #dfdfdf;
+    border-radius: .2em;
+}
+
+.form__input--message{
+    resize: none;
+    padding-bottom: 10em; 
+    margin-bottom: .5em;
+}
+
+.form__cta{
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #0051c2;
+    color: #fff;
+    border: none;
+    font-weight: 300;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+/* Pie de página */
+.footer{
+
+    margin: auto;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    color: darkred;
+    background-color:lightgrey;
+    text-align: center;
+}
