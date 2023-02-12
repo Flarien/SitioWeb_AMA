@@ -7,6 +7,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-size: 62.5%;
 }
 
 /* Estilo general del Sitio (fondo, títulos, etc) */
@@ -26,6 +27,7 @@ h1{
     text-decoration: underline;
     text-transform: uppercase;
     letter-spacing: 1px;
+    /* font-weight: 900; */
 }
 
 h2{
@@ -39,11 +41,48 @@ h2{
 
 /* Barra de Navegación */
 nav{
+    position: fixed;
+    background: linear-gradient(to right, rgb(179, 179, 179), rgb(141, 0, 0));
+    top: 0;
+    height: 80px;
+    width: 100%;
+}
+
+.enlace{
+    position: absolute;
+    padding: 5px 50px;
+}
+
+.logo{
+    height: 70px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 15px;
+}
+
+nav ul li a{
+    font-family: inherit;
+    font-size: 15px;
+    color: #fff;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+
+/* nav{
     display: flex;
     position: fixed;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.507), rgb(141, 0, 0));
     width: 100%;
     height: 80px;
+    justify-content: space-between;
     }
 
 .enlaceLogo{
@@ -68,7 +107,7 @@ nav ul li a{
     color: #fff;
     padding-right: 10px;
     text-transform: uppercase;
-}
+} */
 
 /* nav{
     position: fixed;
