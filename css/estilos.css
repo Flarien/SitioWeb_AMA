@@ -50,13 +50,10 @@ nav{
     justify-content: space-between;
     }
 
-    .contenedorLogo .logo{
-        display: inline-block;
-    }
-
     .logo{
-        height: 80%;
-    }
+        height: 100%;
+        padding: .1rem;
+        }
 
     ul{
         display: flex;
@@ -68,7 +65,7 @@ nav{
             font-family: inherit;
             font-size: 1.5rem;
             color: #fff;
-            padding-right: 1rem;
+            padding-right: 1.5rem;
             text-transform: uppercase;
         }
 
