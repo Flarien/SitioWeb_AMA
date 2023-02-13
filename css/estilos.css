@@ -40,112 +40,39 @@ h2{
 }
 
 /* Barra de Navegación */
+
+
 nav{
-    position: fixed;
-    background: linear-gradient(to right, rgb(179, 179, 179), rgb(141, 0, 0));
-    top: 0;
-    height: 80px;
-    width: 100%;
-}
-
-.enlace{
-    position: absolute;
-    padding: 5px 50px;
-}
-
-.logo{
-    height: 70px;
-}
-
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0px 15px;
-}
-
-nav ul li a{
-    font-family: inherit;
-    font-size: 15px;
-    color: #fff;
-    padding-right: 10px;
-    text-transform: uppercase;
-}
-
-/* nav{
     display: flex;
     position: fixed;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.507), rgb(141, 0, 0));
     width: 100%;
-    height: 80px;
+    height: 6rem;
     justify-content: space-between;
     }
 
-.enlaceLogo{
-    padding: 5px 5px;
-    justify-content: left;
-}
+    .contenedorLogo .logo{
+        display: inline-block;
 
-.logo{
-    height: 70px;
-}
+    }
 
-ul{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    margin: 0 auto;
-}
+    .logo{
+        height: 80%;
+    }
 
-nav ul li a{
-    font-family: inherit;
-    font-size: 15px;
-    color: #fff;
-    padding-right: 10px;
-    text-transform: uppercase;
-} */
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
-/* nav{
-    position: fixed;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.507), rgb(141, 0, 0));
-    top: 0;
-    height: 80px;
-    width: 100%;
-}
-
-.enlaceLogo{
-    position: absolute;
-    padding: 5px 5px;
-}
-
-.logo{
-    height: 70px;
-    max-height: 70px;
-}
-
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0px 15px;
-}
-
-nav ul li a{
-    font-family: inherit;
-    font-size: 15px;
-    color: #fff;
-    padding-right: 10px;
-    text-transform: uppercase;
-} */
-
+    ul li a{
+        font-family: inherit;
+        font-size: 1.5rem;
+        color: #fff;
+        padding-right: 1rem;
+        text-transform: uppercase;
+    }
 
 /* Bienvenida */
 .contenido{
