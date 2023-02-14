@@ -40,7 +40,6 @@ h2{
 }
 
 /* Barra de Navegación */
-
 nav{
     display: flex;
     position: fixed;
@@ -70,28 +69,13 @@ nav{
         }
 
 /* Bienvenida */
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .contenido{
-    line-height: 2;
-    font-size: large;
     text-align: center;
-    width: 100%;
-    margin: auto;
-    padding: 3em 1.5em;
-}
-
-.btn{
-    text-align: center;
-    background-color: #680000;
-    border: rgba(121, 3, 3, 0.489);
-    border-style: ridge;
-    height: 30px;
-    margin: 20px;
-}
-
-.btn a{
-    font-family: inherit;
-    color: #fff;
-    padding: 20px;
 }
 
 
