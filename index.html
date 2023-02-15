@@ -11,22 +11,47 @@
 </head>
 
 <body>
-<div class="container-fluid estiloGral">
+<div class="estiloGral">
 
 <!-- Barra de Navegación --> 
 	<header id="inicio">
-		<nav>
-			<a href="index.html"><img src="./assets/logoAma.png" class="logo"></a>
-			<ul>
-				<li><a href="./index.html">Inicio</a></li>
-				<li><a href="./pages/aikido.html">Aikido</a></li>
-				<li><a href="./pages/nosotros.html">Nosotros</a></li>
-				<li><a href="./pages/galeria.html">Galería</a></li>
-				<li><a href="./pages/clases.html">Clases</a></li>
-				<li><a href="./pages/eventos.html">Eventos</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+		<nav class="navbar fixed-top navbar-expand-lg bg-primary" data-bs-theme="dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="./assets/logoAma.png" alt="Bootstrap" width="40"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a></li>
+						<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Aikido</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="./pages/aikido.html">¿Qué es el Aikido?</a></li>
+								<li><a class="dropdown-item" href="#">El Fundador</a></li>
+								<li><a class="dropdown-item" href="#">Kenzo Miyazawa Shihan</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sobre Nosotros</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="./pages/nosotros.html">Aikido A.M.A.</a></li>
+								<li><a class="dropdown-item" href="#">J.A. Carrizo Sensei</a></li>
+								<li><a class="dropdown-item" href="#">Nuestros Instructores</a></li>
+								<li><a class="dropdown-item" href="./pages/galeria.html">Galería</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="./pages/clases.html">Clases</a></li>
+						<li class="nav-item"><a class="nav-link" href="./pages/eventos.html">Eventos</a></li>
+						<li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
 		</nav>
+
+
+
+
+
 	</header>
 
 
