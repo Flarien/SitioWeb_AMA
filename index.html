@@ -15,10 +15,10 @@
 
 <!-- Barra de Navegación --> 
 	<header id="inicio">
-		<nav class="navbar fixed-top navbar-expand-lg bg-primary" data-bs-theme="dark">
+		<nav class="navbar fixed-top navbar-expand-lg --bs-danger-text" data-bs-theme="dark">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">
-					<img src="./assets/logoAma.png" alt="Bootstrap" width="40"></a>
+				<a class="navbar-brand" href="./index.html">
+					<img class="logo" src="./assets/logoAma.png" alt="Bootstrap"></a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -47,28 +47,23 @@
 				</div>
 			</div>
 		</nav>
-
-
-
-
-
 	</header>
 
 
-	<main class="contenedor">
+	<main class="container-fluid">
 <!-- Bienvenida -->
-		<section>
-			<div class="contenido">
-				<h1>Asociación Marplatense de Aikido</h1>
-				<p> La Asociación Marplatense de Aikido (A.M.A.) está 
+		<section class="welcome">
+			<div class="container-fluid">
+				<h1><strong>Asociación Marplatense de Aikido</strong></h1>
+				<p class="h3"> La Asociación Marplatense de Aikido (A.M.A.) está 
 				constituida como una Asociación Civil sin fines 
 				de lucro, cuyo principal objeto es el bien común 
 				y está destinada a realizar una obra de interés 
 				general.</p>
-				<p> Nuestro objetivo principal es promover la 
+				<p class="h3"> Nuestro objetivo principal es promover la 
 				enseñanza, conocimiento y comprensión del Arte 
 				Marcial denominado AIKIDO.</p>
-				<button class="btn"><a href="./pages/nosotros.html">Leer más</a></button>
+				<button type="button" class="btn btn-danger"><a href="./pages/nosotros.html">Leer más</a></button>
 			</div>
 			
 		</section>
@@ -85,52 +80,55 @@
 
 <!-- Artículos varios-->
 		<section>
-			<article class="container__article">
-				<h2 class="container__article--title">Artículos de Interés</h2>
-				<div class="columna">
-					<h3>Clases</h3>
-					<p class="columna__texto">
-						Conocé todos nuestros horarios de 
-						las clases de Aikido para 
-						niños, adolescentes y adultos.
-					</p>
-					<button class="btn--gris"><a href="./pages/clases.html">Ir a ver</a></button>
-				</div>
-				<div class="columna">
-					<h3>Eventos</h3>
-					<p class="columna__texto">
-						Enterate de los próximos 
-						eventos, tanto los que organizamos
-						como en los que participaremos.
-					</p>
-					<button class="btn--gris"><a href="./pages/eventos.html">Ir a ver</a></button>
-				</div>
-				<div class="columna">
-					<h3>Galería</h3>
-					<p class="columna__texto">
-						Ingresá para ver fotos y videos
-						de nuestro dojo y de algunos
-						eventos pasados.
-					</p>
-					<button class="btn--gris"><a href="./pages/galeria.html">Ir a ver</a></button>
+			<article class="container-fluid">
+				<h2>Artículos de Interés</h2>
+
+				<div class="card-group">
+					<div class="card" style="width: 18rem;">
+						<img src="..." class="card-img-top" alt="...">
+						<div class="card-body">
+							<h3>Clases</h3>
+							<p class="columna__texto">
+								Conocé todos nuestros horarios de 
+								las clases de Aikido para 
+								niños, adolescentes y adultos.
+							</p>
+							<button type="button" class="btn btn-danger"><a href="./pages/clases.html">Ir a ver</a></button>
+						</div>
+					</div>
+
+					<div class="card" style="width: 18rem;">
+						<img src="..." class="card-img-top" alt="...">
+						<div class="card-body">
+							<h3>Eventos</h3>
+							<p class="columna__texto">
+								Enterate de los próximos 
+								eventos, tanto los que organizamos
+								como en los que participaremos.
+							</p>
+							<button type="button" class="btn btn-danger"><a href="./pages/eventos.html">Ir a ver</a></button>
+						</div>
+					</div>
+
+					<div class="card" style="width: 18rem;">
+						<img src="..." class="card-img-top" alt="...">
+						<div class="columna">
+							<h3>Galería</h3>
+							<p class="columna__texto">
+								Ingresá para ver fotos y videos
+								de nuestro dojo y de algunos
+								eventos pasados.
+							</p>
+							<button type="button" class="btn btn-danger"><a href="./pages/galeria.html">Ir a ver</a></button>
+						</div>
+					</div>
 				</div>
 			</article>
 		</section>
 
-<!-- Formulario de Contacto -->
-		<form action="#" class="form" id="form">
-			<div class="form__container">
-				<h2 class="form__title">Contáctanos</h2>
-				<input type="text" class="form__input" placeholder="Nombre y Apellido">
-				<input type="email" class="form__input" placeholder="ejemplo@mail.com">
-				<textarea class="form__input form__input--message" placeholder="Deje su consulta aquí."></textarea>
-				<input type="submit" value="Enviar" class="form__cta">	
-			</div>
-		</form>
-
 <!-- Botón de "volver arriba" -->
 		<div class="contenido">
-			<button class="btn"><a href="#inicio">Subir</a></button>
+			<button type="button" class="btn btn-secondary"><a href="#inicio">Subir</a></button>
 		</div>
 
 	</main>
@@ -139,19 +137,17 @@
 <!-- Pie de Página --> 
 	<footer>
 		<address class="footer">
-			<img src="./assets/logoAma.png" width="7%">
+			<img src="./assets/logoAma.png" width="10%">
 			<h3>Encontranos en nuestras redes sociales:</h3>
 			<a href="https://www.facebook.com/ama.aikido"><img src="./assets/fbLogo.png"></a>
 			<a href="https://www.instagram.com/ama.aikido/"><img src="./assets/igLogo.png"></a>
 			<h4><b>Asociación Marplatense de Aikido</b></h4>
 			<h5>Rivadavia 4357 - Mar del Plata, Argentina</h5>
-			<h5><a href="https:/wa.me/5492236688286">+54 (223) 668 8286</a> | aikidoama.mdq@gmail.com</h5>
+			<h5><a class="a--roja" href="https:/wa.me/5492236688286">+54 (223) 668 8286</a> | aikidoama.mdq@gmail.com</h5>
 		</address>
 		</footer>
 
 </div>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
-
 </html>
