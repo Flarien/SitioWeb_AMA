@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
 	<link rel="shortcut icon" href="../assets/Favicon.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/Estilos.css"/>
 	<title>Sobre Nosotros</title>
 </head>
@@ -14,19 +15,37 @@
 
 <!--Barra de Navegación --> 
 	<header id="inicio">
-		<nav>
-			<a href="../index.html" class="enlace">
-				<img src="../assets/logoAma.png" class="logo">
-			</a>
-			<ul>
-				<li><a href="../index.html">Inicio</a></li>
-				<li><a href="./aikido.html">Aikido</a></li>
-				<li><a href="nosotros.html">Nosotros</a></li>
-				<li><a href="./galeria.html">Galería</a></li>
-				<li><a href="./clases.html">Clases</a></li>
-				<li><a href="./eventos.html">Eventos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+		<nav class="navbar fixed-top navbar-expand-lg --bs-danger-text" data-bs-theme="dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="../index.html">
+					<img class="logo" src="../assets/logoAma.png"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Inicio</a></li>
+						<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Aikido</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="./aikido.html">¿Qué es el Aikido?</a></li>
+								<li><a class="dropdown-item" href="#">El Fundador</a></li>
+								<li><a class="dropdown-item" href="#">Kenzo Miyazawa Shihan</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sobre Nosotros</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="./nosotros.html">Aikido A.M.A.</a></li>
+								<li><a class="dropdown-item" href="#">J.A. Carrizo Sensei</a></li>
+								<li><a class="dropdown-item" href="#">Nuestros Instructores</a></li>
+								<li><a class="dropdown-item" href="./galeria.html">Galería</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="./clases.html">Clases</a></li>
+						<li class="nav-item"><a class="nav-link" href="./eventos.html">Eventos</a></li>
+						<li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 	</header>
 
@@ -94,5 +113,6 @@
 	</footer>
 
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
