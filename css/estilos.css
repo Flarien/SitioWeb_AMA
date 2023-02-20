@@ -58,7 +58,7 @@ h1{
     position: fixed;
     bottom: 20px;
     right: 20px;
-}
+} 
 
 /* Banner */
 .parallax_banner{
@@ -130,7 +130,35 @@ h1{
     padding: 20px;
 }
 
-/* Formulario */
+/* Formulario de contacto*/
+.contenedor__grid{
+    display: grid;
+    padding: 7em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "caja-1 caja-2"
+    "caja-1 caja-3";
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.caja-1{
+    grid-area: caja-1;
+}
+
+.caja-2{
+    grid-area: caja-2;
+    display: inline-flex;
+    border: groove;
+}
+
+.caja-3{
+    grid-area: caja-3;
+    text-align: center;
+    padding: 1em;
+}
+
 .form{
     background-color: #dfdfdf;
     width: 100%;
@@ -138,7 +166,6 @@ h1{
     margin: auto;
     border-radius: .5em;
     padding: 3.5em 1.5em;
-    margin-top: 2em;
     margin-bottom: 2em;
 }
 
