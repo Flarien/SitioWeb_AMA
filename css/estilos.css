@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;900&display=swap');
+
 /* Reset selector */
 *{
     margin: 0;
@@ -11,6 +13,7 @@
 .estiloGral{
     width: 100vw;
     height: 100vh;
+    font-family: 'Libre Franklin', sans-serif;
     background-color: linear-gradient(120deg, #e3e3e3 0%, #c3c3c3 100%);
 }
 
@@ -51,6 +54,39 @@ nav{
 
 h1{
     text-decoration: underline;
+}
+
+/* Animaciones */
+
+.tracking-in-expand-fwd-top {
+	animation: tracking-in-expand-fwd-top 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@keyframes tracking-in-expand-fwd-top {
+    0% {
+        letter-spacing: -0.5em;
+        transform: translateZ(-500px) translateY(-100px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.fade-in {
+	animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Botón de WhatsApp */
