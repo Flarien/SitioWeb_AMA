@@ -14,7 +14,7 @@
     width: 100vw;
     height: 100vh;
     font-family: 'Libre Franklin', sans-serif;
-    background-color: linear-gradient(120deg, #e3e3e3 0%, #c3c3c3 100%);
+    background-color: linear-gradient(120deg, #e3e3e3 0%, #9a9a9a 100%);
 }
 
 a{
@@ -56,8 +56,12 @@ h1{
     text-decoration: underline;
 }
 
-/* Animaciones */
+.parrafo{
+    padding: 1em 4em 1em 4em;
+    font-size: 20px;
+}
 
+/* Animaciones */
 .tracking-in-expand-fwd-top {
 	animation: tracking-in-expand-fwd-top 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
@@ -75,7 +79,6 @@ h1{
         opacity: 1;
     }
 }
-
 
 .fade-in {
 	animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
@@ -118,113 +121,85 @@ h1{
 }
 
 /* Articulos Varios */
-.container__article{
-    display: flex;
-    justify-content: center;
+
+.articulosVarios{
     width: 100%;
     margin: 30px auto;
     padding: 3em 1.5em;
     background-color: rgb(196, 196, 196);
 }
 
-.container__article--title{
+.cards-title{
+    display: flex;
     justify-content: center;
-    align-content: center;
 }
 
-.columna{
-    display: inline-block;
-    text-align: center;
-    width: 250px;
-    height: 350px;
-    padding: 30px;
+.container__cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card {
+    width: 190px;
+    height: 254px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1em;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
     margin: 30px;
-    background-color: rgba(233, 233, 233, 0.675);
-    border-radius: 10px;
-    border: 5px solid rgb(54, 54, 54);
 }
 
-.columna__texto{
-    font-size: medium;
-    margin:0px;
-    padding: 20px 0px;
-    overflow: hidden;
-    line-height: 2em;
+.card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
 }
 
-.btn--gris{
-    text-align: center;
-    background-color: #858585;
-    border: rgba(54, 16, 16, 0.489);
-    border-style: ridge;
-    height: 30px;
-    margin: 20px;
-}
-
-.btn--gris a{
-    font-family: inherit;
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: darkred;
     color: #fff;
-    padding: 20px;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
 }
 
+.text-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+}
 
-    /* Prueba cards */
-    .card {
-        width: 190px;
-        height: 254px;
-        border-radius: 20px;
-        background: #f5f5f5;
-        position: relative;
-        padding: 1.8rem;
-        border: 2px solid #c3c6ce;
-        transition: 0.5s ease-out;
-        overflow: visible;
-       }
-       
-       .card-details {
-        color: black;
-        height: 100%;
-        gap: .5em;
-        display: grid;
-        place-content: center;
-       }
-       
-       .card-button {
-        transform: translate(-50%, 125%);
-        width: 60%;
-        border-radius: 1rem;
-        border: none;
-        background-color: #008bf8;
-        color: #fff;
-        font-size: 1rem;
-        padding: .5rem 1rem;
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        opacity: 0;
-        transition: 0.3s ease-out;
-       }
-       
-       .text-body {
-        color: rgb(134, 134, 134);
-       }
-       
-       /*Text*/
-       .text-title {
-        font-size: 1.5em;
-        font-weight: bold;
-       }
-       
-       /*Hover*/
-       .card:hover {
-        border-color: #008bf8;
-        box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-       }
-       
-       .card:hover .card-button {
-        transform: translate(-50%, 50%);
-        opacity: 1;
-       }
+.text-body {
+    font-size: 15px;
+    color: rgb(134, 134, 134);
+    text-align: center;
+
+}
+
+.card:hover {
+    border-color: darkred;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
 
 
 /* Formulario de contacto*/
@@ -309,7 +284,12 @@ h1{
     font-weight: 600;
 }
 
-
+/* Botón para subir */
+.btn--up{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
 
 /* Pie de página */
 .footer{
