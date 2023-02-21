@@ -28,6 +28,10 @@ a{
 }
 
 /* Barra de navegación */
+header{
+    margin-bottom: 5em;
+}
+
 nav{
     padding: 0;
     margin: 0;
@@ -46,19 +50,29 @@ nav{
     width: 3em;
 }
 
-/* Bienvenida */
-.welcome{
-    padding: 7em;
+/* Parrafos, contenido y texto */
+.contenido{
     text-align: center;
+    margin: 1em;
 }
 
 h1{
-    text-decoration: underline;
+    text-decoration: underline ;
+    text-align: center;
+    font-weight: 600;
 }
 
 .parrafo{
     padding: 1em 4em 1em 4em;
     font-size: 20px;
+}
+
+.contenido--textoLargo{
+    font-size: 20px;
+    font-family: inherit serif;
+    text-align: left;
+    padding: 3em;
+    text-indent: 3em;
 }
 
 /* Animaciones */
@@ -106,7 +120,7 @@ h1{
     height: 300px;
     background: center fixed no-repeat url("../assets/dojoPanorámica.jpg") ;
     background-size: cover;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     margin: auto;
 }
 
@@ -116,9 +130,11 @@ h1{
     margin: auto;
     color: #fff;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    font-weight: bolder;
     -webkit-text-stroke: 1px black;
+    letter-spacing: 1px;
 }
+
 
 /* Articulos Varios */
 
