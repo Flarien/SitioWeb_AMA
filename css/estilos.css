@@ -42,6 +42,10 @@ nav{
     height: 4em;
 }
 
+.dropdown-menu{
+    background-color: rgb(141, 0, 0);
+}
+
 .logo{
     position: fixed;
     top: 2px;
