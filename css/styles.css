@@ -1,24 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;900&display=swap');
 
 /* Reset selector */
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-}
+} */
 
 /* Estilo general */
 .estiloGral{
     width: 100%;
     font-family: 'Libre Franklin', sans-serif;
     background-color: linear-gradient(120deg, #e3e3e3 0%, #9a9a9a 100%);
-}
-
-a{
-    text-decoration: none;
-    color: #ffffff;
 }
 
 .a--roja{
@@ -51,6 +46,11 @@ nav{
     top: 2px;
     left: 2px;
     width: 3em;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 /* Parrafos, contenido y texto */
