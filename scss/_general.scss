@@ -1,0 +1,21 @@
+// Reset selector
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+//Estilo general
+.estiloGral{
+  width: 100%;
+  font-family: 'Libre Franklin', sans-serif;
+  background-color: $backgroundGradient;
+}
+
+.a--roja{
+  text-decoration: none;
+  color: $colorGeneral;
+}

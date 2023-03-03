@@ -10,7 +10,7 @@
 } */
 
 /* Estilo general */
-.estiloGral{
+/* .estiloGral{
     width: 100%;
     font-family: 'Libre Franklin', sans-serif;
     background-color: linear-gradient(120deg, #e3e3e3 0%, #9a9a9a 100%);
@@ -19,10 +19,10 @@
 .a--roja{
     text-decoration: none;
     color: darkred;
-}
+} */
 
 /* Barra de navegación */
-header{
+/* header{
     margin-bottom: 5em;
 }
 
@@ -51,7 +51,7 @@ nav{
 a{
     text-decoration: none;
     color: #ffffff;
-}
+} */
 
 /* Parrafos, contenido y texto */
 .contenido{

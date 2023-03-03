@@ -4,3 +4,32 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none; }
+
+.estiloGral {
+  width: 100%;
+  font-family: 'Libre Franklin', sans-serif;
+  background-color: linear-gradient(120deg, #e3e3e3 0%, #9a9a9a 100%); }
+
+.a--roja {
+  text-decoration: none;
+  color: #8d0000; }
+
+header {
+  margin-bottom: 5em; }
+  header nav {
+    padding: 0;
+    margin: 0; }
+  header .navbar {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.507), #8d0000);
+    text-transform: uppercase;
+    height: 4em; }
+  header .dropdown-menu {
+    background-color: #8d0000; }
+  header .logo {
+    position: fixed;
+    top: 2px;
+    left: 2px;
+    width: 3em; }
+  header a {
+    text-decoration: none;
+    color: #ffffff; }
