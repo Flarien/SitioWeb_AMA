@@ -12,6 +12,10 @@
   font-family: 'Libre Franklin', sans-serif;
   background-color: linear-gradient(120deg, #e3e3e3 0%, #9a9a9a 100%); }
 
+a {
+  text-decoration: none;
+  color: white; }
+
 .a--roja {
   text-decoration: none;
   color: #8d0000; }
