@@ -10,6 +10,14 @@ header{
   .navbar{
     background: $gradienteBarra;
     text-transform: uppercase;
+
+    .navbar-toggler {
+      border: none !important;
+
+      .icon-menu{
+        height: 1.5em;
+      }
+    }
   }
 
   .dropdown-menu{
@@ -28,7 +36,3 @@ header{
     color: #ffffff;
   }
 }
-
-
-
-

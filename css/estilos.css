@@ -19,12 +19,6 @@ a {
   text-decoration: none;
   color: #8d0000; }
 
-.navbar-toggler {
-  border: none !important; }
-
-.navbar-toggler:focus {
-  box-shadow: none !important; }
-
 .tracking-in-expand-fwd-top {
   animation: tracking-in-expand-fwd-top 2s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
 
@@ -56,6 +50,10 @@ header {
   header .navbar {
     background: linear-gradient(to right, #630000, #8d0000);
     text-transform: uppercase; }
+    header .navbar .navbar-toggler {
+      border: none !important; }
+      header .navbar .navbar-toggler .icon-menu {
+        height: 1.5em; }
   header .dropdown-menu {
     background-color: #8d0000; }
   header .logo {
