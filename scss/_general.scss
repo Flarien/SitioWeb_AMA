@@ -1,0 +1,30 @@
+// Reset selector
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+//Estilo general
+.estiloGral{
+  width: 100%;
+  font-family: 'Libre Franklin', sans-serif;
+  // background-color: $backgroundGradient;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.a--roja{
+  text-decoration: none;
+  color: $colorGeneral;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;900&display=swap');

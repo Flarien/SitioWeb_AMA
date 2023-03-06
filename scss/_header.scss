@@ -1,0 +1,38 @@
+
+header{
+  margin-bottom: 5em;
+
+  nav{
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar{
+    background: $gradienteBarra;
+    text-transform: uppercase;
+
+    .navbar-toggler {
+      border: none !important;
+
+      .icon-menu{
+        height: 1.5em;
+      }
+    }
+  }
+
+  .dropdown-menu{
+    background-color: $colorGeneral;
+  }
+
+  .logo{
+    position: fixed;
+    top: 2px;
+    left: 2px;
+    width: 2.6em;
+  }
+
+  a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+}

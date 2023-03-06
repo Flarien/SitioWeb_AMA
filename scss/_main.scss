@@ -1,0 +1,149 @@
+
+
+/* Parrafos, contenido y texto */
+
+
+.contenido{
+  text-align: center;
+  margin: 1em;
+
+  h1{
+    text-decoration: underline ;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .parrafo{
+    padding: 1em 4em 1em 4em;
+    font-size: 20px;
+  }
+
+  .contenido--textoLargo{
+    font-size: 20px;
+    font-family: inherit serif;
+    text-align: left;
+    padding: 3em;
+    text-indent: 3em;
+  }
+
+}
+
+
+// Parallax Banner 
+.parallax_banner{
+  width: 100%;
+  height: 300px;
+  background: center fixed no-repeat url("../assets/dojoPanorámica.jpg") ;
+  background-size: cover;
+  margin-bottom: 2em;
+  margin: auto;
+
+  .h2--blanco{
+    text-align: center;
+    padding: 40px 20px;
+    margin: auto;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px black;
+    letter-spacing: 1px;
+  }
+}
+
+// Articulos Varios
+.articulosVarios{
+  width: 100%;
+  margin: 30px auto;
+  padding: 3em 1.5em;
+  background-color: rgb(196, 196, 196);
+
+  .cards-title{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container__cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    .card {
+      width: 190px;
+      height: 254px;
+      border-radius: 20px;
+      background: #f5f5f5;
+      position: relative;
+      padding: 1em;
+      border: 2px solid #c3c6ce;
+      transition: 0.5s ease-out;
+      overflow: visible;
+      margin: 30px;
+
+        .card-details {
+          color: black;
+          height: 100%;
+          gap: .5em;
+          display: grid;
+          place-content: center;
+
+          .text-title {
+            font-size: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: underline;
+          }
+          
+          .text-body {
+            font-size: 15px;
+            color: rgb(134, 134, 134);
+            text-align: center;
+          }
+        } 
+
+        .card-button {
+          transform: translate(-50%, 125%);
+          width: 60%;
+          border-radius: 1rem;
+          border: none;
+          background-color: $colorGeneral;
+          color: #fff;
+          font-size: 1rem;
+          padding: .5rem 1rem;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          opacity: 0;
+          transition: 0.3s ease-out;
+        }
+    }
+
+  }
+  
+
+  .card:hover {
+    border-color: $colorGeneral;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  }
+  
+  .card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+  }
+}
+
+
+// Botón de WhatsApp
+.btn__wapp{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+} 
+
+
+// Botón para subir 
+.btn--up{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
