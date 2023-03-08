@@ -1,5 +1,4 @@
 @import './variables';
-@import "../node_modules/bootstrap/scss/bootstrap";
 @import './general';
 @import './animaciones';
 @import './header';
@@ -7,59 +6,3 @@
 @import './footer';
 @import './formulario';
 
-
-/* Media Queries */
-
-/* Celular */
-@media (max-width: 575.98px) { 
-  .contenido{
-      margin: 0.5em;
-  }
-
-  h1{
-      font-weight: 400;
-  }
-
-  h2{
-      font-weight: 200;
-      padding-top: 1.5em;
-  }
-
-  .parrafo{
-      padding: 1.5em;
-      font-size: 16px;
-  }
-
-  .contenido--textoLargo{
-      font-size: 16px;
-      padding: 1.5em;
-      text-indent: 1.5em;
-  }
-
-  .articulosVarios{
-      margin: auto;
-      padding: 1em 0.5em;
-  }
-
-  .container__cards{
-      align-items: center;
-      flex-direction: column;
-  }
-
-  .btn__wapp{
-      bottom: 10px;
-      right: 10px;
-  } 
-
-  .footer{
-      padding-top: 0.5em;
-      padding-bottom: 1em;
-  }
-
-  .contenedor__grid{
-      display: flex;
-      flex-direction: column;
-      padding: 2em;
-  }
-
-}
