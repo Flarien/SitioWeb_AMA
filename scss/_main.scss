@@ -63,9 +63,7 @@
   }
   
   .container__cards{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    @include flex (row, center, center);
 
     .card {
       width: 190px;

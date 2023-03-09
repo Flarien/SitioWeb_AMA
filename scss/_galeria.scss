@@ -11,9 +11,7 @@
   grid-auto-flow: dense;
 
   .grid__item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(grid-auto-rows, center, center);
     transition: transform 0.3s ease-in-out;
     background-size: cover;
     background-position: center;
