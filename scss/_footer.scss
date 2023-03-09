@@ -1,19 +1,18 @@
 .footer{
   margin: auto;
   padding-top: 1em;
-  padding-bottom: 2em;
-  color: darkred;
+  padding-bottom: 1em;
+  color: $colorGeneral;
   background-color:rgb(146, 146, 146);
   text-align: center;
 
   .logoFooter{
-    width: 6em;
+    width: 5em;
   }
   
   .logoRedes{
-    width: 2.5em;
-    margin-top: 0.3em;
-    margin-bottom: 1em;
+    width: 2em;
+    margin: 0.5em;
   }
 }
 
