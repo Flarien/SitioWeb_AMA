@@ -115,9 +115,8 @@
         }
     }
 
-    @include quiebre (mobile){
-      display: block;
-      justify-content: center;
+    @include quiebre (tablet){
+      @include flex (column, center, center)
       }
     }
   }
