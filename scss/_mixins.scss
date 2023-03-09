@@ -5,3 +5,8 @@
   align-items: $aligne;
 }
 
+@mixin quiebre($break-p){
+  @media screen and (max-width: map-get($breakpoints, $break-p)){
+    @content 
+  }
+}
