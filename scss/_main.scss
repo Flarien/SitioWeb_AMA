@@ -24,6 +24,18 @@
     text-align: left;
     padding: 3em;
     text-indent: 3em;
+
+    .img1{
+      float: right;
+      width: 25em;
+      margin: 15px;
+    }
+
+    .img2{
+      float: left;
+      width: 25em;
+      margin: 15px;
+    }
   }
 
 }

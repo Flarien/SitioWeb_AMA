@@ -17,6 +17,15 @@ a {
   text-decoration: none;
   color: #8d0000; }
 
+.subtitulo {
+  margin-top: 2em;
+  margin-bottom: 0.5em; }
+
+.img {
+  width: 70%;
+  margin: 1em;
+  display: inline-block; }
+
 header {
   margin-bottom: 5em; }
   header nav {
@@ -58,6 +67,14 @@ header {
     text-align: left;
     padding: 3em;
     text-indent: 3em; }
+    .contenido .contenido--textoLargo .img1 {
+      float: right;
+      width: 25em;
+      margin: 15px; }
+    .contenido .contenido--textoLargo .img2 {
+      float: left;
+      width: 25em;
+      margin: 15px; }
 
 .parallax_banner {
   width: 100%;
