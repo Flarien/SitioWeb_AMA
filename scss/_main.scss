@@ -1,7 +1,4 @@
-
-
 /* Parrafos, contenido y texto */
-
 
 .contenido{
   text-align: center;
@@ -11,11 +8,27 @@
     text-decoration: underline ;
     text-align: center;
     font-weight: 600;
+
+    @include quiebre (tablet){
+      font-weight: 400;
+    }
+
+    @include quiebre (mobile){
+      font-weight: 300;
+    }
   }
 
   .parrafo{
     padding: 1em 4em 1em 4em;
     font-size: 20px;
+
+    @include quiebre (tablet){
+      font-size: 16px;
+    }
+
+    @include quiebre (mobile){
+      font-size: 12px;
+    }
   }
 
   .contenido--textoLargo{
@@ -24,6 +37,14 @@
     text-align: left;
     padding: 3em;
     text-indent: 3em;
+
+    @include quiebre (tablet){
+      font-size: 16px;
+    }
+
+    @include quiebre (mobile){
+      font-size: 12px;
+    }
 
     .img1{
       float: right;
@@ -142,9 +163,6 @@
     transform: translate(-50%, 50%);
     opacity: 1;
   }
-
-
-
 
 
 // Botón de WhatsApp
