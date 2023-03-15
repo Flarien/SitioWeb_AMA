@@ -99,11 +99,17 @@ header {
 
 .parallax_banner {
   width: 100%;
-  height: 300px;
+  height: 400px;
   background: center fixed no-repeat url("../assets/dojopanoramica.webp");
   background-size: cover;
   margin-bottom: 2em;
   margin: auto; }
+  @media screen and (max-width: 768px) {
+    .parallax_banner {
+      height: 350px; } }
+  @media screen and (max-width: 540px) {
+    .parallax_banner {
+      height: 300px; } }
   .parallax_banner .h2--blanco {
     text-align: center;
     padding: 40px 20px;
@@ -128,8 +134,8 @@ header {
     justify-content: center;
     align-items: center; }
     .articulosVarios .container__cards .card {
-      width: 190px;
-      height: 254px;
+      width: 250px;
+      height: 350px;
       border-radius: 20px;
       background: #f5f5f5;
       position: relative;
@@ -145,14 +151,20 @@ header {
         display: grid;
         place-content: center; }
         .articulosVarios .container__cards .card .card-details .text-title {
-          font-size: 20px;
+          font-size: 25px;
           text-transform: uppercase;
           text-align: center;
           text-decoration: underline; }
+          @media screen and (max-width: 540px) {
+            .articulosVarios .container__cards .card .card-details .text-title {
+              font-size: 20px; } }
         .articulosVarios .container__cards .card .card-details .text-body {
-          font-size: 15px;
+          font-size: 20px;
           color: #868686;
           text-align: center; }
+          @media screen and (max-width: 540px) {
+            .articulosVarios .container__cards .card .card-details .text-body {
+              font-size: 15px; } }
       .articulosVarios .container__cards .card .card-button {
         transform: translate(-50%, 125%);
         width: 60%;
@@ -167,6 +179,10 @@ header {
         bottom: 0;
         opacity: 0;
         transition: 0.3s ease-out; }
+      @media screen and (max-width: 540px) {
+        .articulosVarios .container__cards .card {
+          width: 200px;
+          height: 280px; } }
     .articulosVarios .container__cards .card:hover {
       border-color: #8d0000;
       box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25); }
