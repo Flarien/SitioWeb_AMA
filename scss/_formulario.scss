@@ -2,7 +2,7 @@
 
 .contenedor__grid{
   display: grid;
-  padding: 7em;
+  padding: 3em;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 
@@ -13,6 +13,7 @@
 
   .caja-1{
     grid-area: caja-1;
+    margin: 1em;
 
     .form{
       background-color: #dfdfdf;
@@ -55,7 +56,7 @@
         .form__cta{
           font-family: inherit;
           font-size: 1rem;
-          background-color: #0051c2;
+          background-color: #dc3545;
           color: #fff;
           border: none;
           font-weight: 300;
@@ -72,12 +73,14 @@
     grid-area: caja-2;
     display: inline-flex;
     border: groove;
+    margin: 1em;
   }
   
   .caja-3{
     grid-area: caja-3;
     text-align: center;
     padding: 1em;
+    margin: 1em;
   }
 }
 
