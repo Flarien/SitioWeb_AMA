@@ -6,11 +6,14 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  
 }
 
 //Estilo general
-.estiloGral{
+
+body{
   font-family: 'Libre Franklin', sans-serif;
+  background-image: $backgroundGradient;
 }
 
 a{
