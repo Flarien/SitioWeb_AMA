@@ -102,8 +102,8 @@ header {
   height: 400px;
   background: center fixed no-repeat url("../assets/dojopanoramica.webp");
   background-size: cover;
-  margin-bottom: 2em;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 2em; }
   @media screen and (max-width: 768px) {
     .parallax_banner {
       height: 350px; } }
