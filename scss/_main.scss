@@ -8,6 +8,7 @@
     text-decoration: underline ;
     text-align: center;
     font-weight: 600;
+    padding-top: 1.5em;
 
     @include quiebre (tablet){
       font-weight: 400;

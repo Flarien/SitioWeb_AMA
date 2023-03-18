@@ -6,7 +6,7 @@
   text-decoration: none;
   list-style: none; }
 
-body {
+.estiloGral {
   font-family: 'Libre Franklin', sans-serif;
   background-image: linear-gradient(130deg, #fcfcfc 0%, #c3c3c3 100%); }
 
@@ -27,31 +27,33 @@ a {
   margin: 1em;
   display: inline-block; }
 
-header {
-  margin-bottom: 5em; }
-  header nav {
-    color: white;
-    padding: 0;
-    margin: 0; }
-  header .navbar {
-    background: linear-gradient(to right, #630000, #8d0000);
-    text-transform: uppercase; }
-    header .navbar .navbar-toggler {
-      border: none !important; }
-      header .navbar .navbar-toggler .icon-menu {
-        height: 1.5em; }
-  header .dropdown-menu {
-    background-color: #8d0000;
-    --bs-dropdown-link-hover-bg: rgb(89, 1, 1);
-    --bs-dropdown-link-active-bg: rgb(174, 0, 0); }
-  header .logo {
-    position: fixed;
-    top: 2px;
-    left: 2px;
-    width: 2.6em; }
-  header a {
-    text-decoration: none;
-    color: white; }
+header nav {
+  color: white;
+  padding: 0;
+  margin: 0; }
+
+header .navbar {
+  background: linear-gradient(to right, #630000, #8d0000);
+  text-transform: uppercase; }
+  header .navbar .navbar-toggler {
+    border: none !important; }
+    header .navbar .navbar-toggler .icon-menu {
+      height: 1.5em; }
+
+header .dropdown-menu {
+  background-color: #8d0000;
+  --bs-dropdown-link-hover-bg: rgb(89, 1, 1);
+  --bs-dropdown-link-active-bg: rgb(174, 0, 0); }
+
+header .logo {
+  position: fixed;
+  top: 2px;
+  left: 2px;
+  width: 2.6em; }
+
+header a {
+  text-decoration: none;
+  color: white; }
 
 /* Parrafos, contenido y texto */
 .contenido {
@@ -60,7 +62,8 @@ header {
   .contenido h1 {
     text-decoration: underline;
     text-align: center;
-    font-weight: 600; }
+    font-weight: 600;
+    padding-top: 1.5em; }
     @media screen and (max-width: 768px) {
       .contenido h1 {
         font-weight: 400;
