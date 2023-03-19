@@ -2,9 +2,11 @@
   background-color: gray;
   text-align: center;
   color: white;
+  margin-top: 2em;
 
   .dias{
-    background-color: $colorGeneral;
+    font-weight: bold;
+    background-color: rgb(46, 46, 46);
     height: 4em;
   }
 
@@ -17,15 +19,15 @@
   }
 
   .aikiKids{
-    background-color: rgb(171, 87, 15);
+    background-color: rgb(191, 64, 64);
   }
 
   .ninja{
-    background-color: rgb(26, 31, 73) ;
+    background-color: rgb(32, 35, 58) ;
   }
 
   .tae{
-    background-color: rgb(39, 92, 75);
+    background-color: rgb(47, 66, 60);
   }
 
   .colSeparadora{
@@ -43,7 +45,6 @@
 
 @include quiebre (tablet){
   .calendario{
-    h4{font-size: 1.2rem;}
     h5{font-size: 1rem;}
     h6{font-size: 0.75rem;}
   }
@@ -56,5 +57,10 @@
 
   .horariosMobile{
     display: inline-block;
+
+    h4{
+      text-decoration: underline;
+    }
+
   }
 }

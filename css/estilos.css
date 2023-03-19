@@ -391,20 +391,22 @@ header a {
 .calendario {
   background-color: gray;
   text-align: center;
-  color: white; }
+  color: white;
+  margin-top: 2em; }
   .calendario .dias {
-    background-color: #8d0000;
+    font-weight: bold;
+    background-color: #2e2e2e;
     height: 4em; }
   .calendario .col-2 {
     padding: 20px; }
   .calendario .aiki {
     background-color: #8b2222; }
   .calendario .aikiKids {
-    background-color: #ab570f; }
+    background-color: #bf4040; }
   .calendario .ninja {
-    background-color: #1a1f49; }
+    background-color: #20233a; }
   .calendario .tae {
-    background-color: #275c4b; }
+    background-color: #2f423c; }
   .calendario .colSeparadora {
     height: 3em; }
 
@@ -413,8 +415,6 @@ header a {
     display: none; } }
 
 @media screen and (max-width: 768px) {
-  .calendario h4 {
-    font-size: 1.2rem; }
   .calendario h5 {
     font-size: 1rem; }
   .calendario h6 {
@@ -424,7 +424,9 @@ header a {
   .calendario {
     display: none; }
   .horariosMobile {
-    display: inline-block; } }
+    display: inline-block; }
+    .horariosMobile h4 {
+      text-decoration: underline; } }
 
 .tracking-in-expand-fwd-top {
   animation: tracking-in-expand-fwd-top 2s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
