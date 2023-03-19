@@ -1,0 +1,60 @@
+.calendario{
+  background-color: gray;
+  text-align: center;
+  color: white;
+
+  .dias{
+    background-color: $colorGeneral;
+    height: 4em;
+  }
+
+  .col-2{
+    padding: 20px;
+  }
+
+  .aiki{
+    background-color: rgb(139, 34, 34);
+  }
+
+  .aikiKids{
+    background-color: rgb(171, 87, 15);
+  }
+
+  .ninja{
+    background-color: rgb(26, 31, 73) ;
+  }
+
+  .tae{
+    background-color: rgb(39, 92, 75);
+  }
+
+  .colSeparadora{
+    height: 3em;
+  }
+}
+
+//BREAKPOINTS
+
+@media screen and (min-width: 541px){
+  .horariosMobile{
+    display: none;
+  }
+}
+
+@include quiebre (tablet){
+  .calendario{
+    h4{font-size: 1.2rem;}
+    h5{font-size: 1rem;}
+    h6{font-size: 0.75rem;}
+  }
+}
+
+@include quiebre (mobile){
+  .calendario{
+    display: none;
+  }
+
+  .horariosMobile{
+    display: inline-block;
+  }
+}
