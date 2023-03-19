@@ -73,7 +73,6 @@
   margin: auto;
   margin-bottom: 2em;
 
-
   @include quiebre (tablet){
     height: 350px;
   }
@@ -93,7 +92,22 @@
     letter-spacing: 1px;
   }
 
+}
 
+
+// Carrusel
+.carousel-indicators-icons{
+  background-color: gray !important;
+}
+
+.carousel-control-prev{
+  background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(144, 44, 44));
+  width: 4em;
+}
+
+.carousel-control-next{
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(144, 44, 44));
+  width: 4em;
 }
 
 // Articulos Varios
