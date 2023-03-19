@@ -1,85 +1,102 @@
 // Formulario de contacto
 
-.contenedor__grid{
-  display: grid;
-  padding: 3em;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
-  "caja-1 caja-2"
-  "caja-1 caja-3";
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
+.contenido{
+  width: 100%;
 
-  .caja-1{
-    grid-area: caja-1;
-    margin: 1em;
+  .contenedor__grid{
+    display: grid;
+    padding: 1.5em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "caja-1 caja-2"
+    "caja-1 caja-3";
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
 
-    .form{
-      background-color: #dfdfdf;
-      width: 100%;
-      max-width: 700px;
-      margin: auto;
-      border-radius: .5em;
-      padding: 3.5em 1.5em;
-      margin-bottom: 2em;
 
-      .form__container{
+    .caja-1{
+      grid-area: caja-1;
+
+      .form{
+        background-color: #dfdfdf;
         width: 100%;
-        display: grid;
-        gap: 1em;
-        grid-auto-columns: 100%;
+        max-width: 600px;
+        margin: auto;
+        border-radius: .5em;
+        padding: 3.5em 1.5em;
+        margin-bottom: 2em;
 
-        .form__title{
-          text-align: center;
-          font-size: 1.8rem;
-          text-decoration: underline;
-          margin-bottom: 1em;
-        }
-        
-        .form__input{
-          font-family: inherit;
-          font-size: 1rem;
-          padding: .8em 1em;
-          outline: none;
-          border: none;
-          border: 1px solid #dfdfdf;
-          border-radius: .2em;
-        }
-        
-        .form__input--message{
-          resize: none;
-          padding-bottom: 10em; 
-          margin-bottom: .5em;
-        }
-        
-        .form__cta{
-          font-family: inherit;
-          font-size: 1rem;
-          background-color: #dc3545;
-          color: #fff;
-          border: none;
-          font-weight: 300;
-          padding: .7em 0;
-          border-radius: .2em;
-          cursor: pointer;
+        .form__container{
+          width: 100%;
+          display: grid;
+          gap: 1em;
+          grid-auto-columns: 100%;
+
+          .form__title{
+            text-align: center;
+            font-size: 1.8rem;
+            text-decoration: underline;
+            margin-bottom: 1em;
+          }
+          
+          .form__input{
+            font-family: inherit;
+            font-size: 1rem;
+            padding: .8em 1em;
+            outline: none;
+            border: none;
+            border: 1px solid #dfdfdf;
+            border-radius: .2em;
+          }
+          
+          .form__input--message{
+            resize: none;
+            padding-bottom: 10em; 
+            margin-bottom: .5em;
+          }
+          
+          .form__cta{
+            font-family: inherit;
+            font-size: 1rem;
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            font-weight: 300;
+            padding: .7em 0;
+            border-radius: .2em;
+            cursor: pointer;
+          }
         }
       }
     }
-  }
-  
-  .caja-2{
-    grid-area: caja-2;
-    display: inline-flex;
-    border: groove;
-    margin: 1em;
-  }
-  
-  .caja-3{
-    grid-area: caja-3;
-    text-align: center;
-    padding: 1em;
-    margin: 1em;
-  }
-}
+    
+    .caja-2{
+      grid-area: caja-2;
+      display: inline-flex;
+      border: groove;
+    }
+    
+    .caja-3{
+      grid-area: caja-3;
+      text-align: center;
+      padding: 1em;
+    }
 
+    @include quiebre (tablet){
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 
+      "caja-1"
+      "caja-2"
+      "caja-3";
+
+      .caja-2{
+        height: 400px;
+      }
+
+    }
+
+  }
+
+}

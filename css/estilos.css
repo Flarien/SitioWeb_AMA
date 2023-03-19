@@ -224,67 +224,73 @@ header a {
     width: 2em;
     margin: 0.5em; }
 
-.contenedor__grid {
-  display: grid;
-  padding: 3em;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "caja-1 caja-2" "caja-1 caja-3";
-  grid-row-gap: 10px;
-  grid-column-gap: 10px; }
-  .contenedor__grid .caja-1 {
-    grid-area: caja-1;
-    margin: 1em; }
-    .contenedor__grid .caja-1 .form {
-      background-color: #dfdfdf;
-      width: 100%;
-      max-width: 700px;
-      margin: auto;
-      border-radius: .5em;
-      padding: 3.5em 1.5em;
-      margin-bottom: 2em; }
-      .contenedor__grid .caja-1 .form .form__container {
+.contenido {
+  width: 100%; }
+  .contenido .contenedor__grid {
+    display: grid;
+    padding: 1.5em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "caja-1 caja-2" "caja-1 caja-3";
+    grid-row-gap: 10px;
+    grid-column-gap: 10px; }
+    .contenido .contenedor__grid .caja-1 {
+      grid-area: caja-1; }
+      .contenido .contenedor__grid .caja-1 .form {
+        background-color: #dfdfdf;
         width: 100%;
-        display: grid;
-        gap: 1em;
-        grid-auto-columns: 100%; }
-        .contenedor__grid .caja-1 .form .form__container .form__title {
-          text-align: center;
-          font-size: 1.8rem;
-          text-decoration: underline;
-          margin-bottom: 1em; }
-        .contenedor__grid .caja-1 .form .form__container .form__input {
-          font-family: inherit;
-          font-size: 1rem;
-          padding: .8em 1em;
-          outline: none;
-          border: none;
-          border: 1px solid #dfdfdf;
-          border-radius: .2em; }
-        .contenedor__grid .caja-1 .form .form__container .form__input--message {
-          resize: none;
-          padding-bottom: 10em;
-          margin-bottom: .5em; }
-        .contenedor__grid .caja-1 .form .form__container .form__cta {
-          font-family: inherit;
-          font-size: 1rem;
-          background-color: #dc3545;
-          color: #fff;
-          border: none;
-          font-weight: 300;
-          padding: .7em 0;
-          border-radius: .2em;
-          cursor: pointer; }
-  .contenedor__grid .caja-2 {
-    grid-area: caja-2;
-    display: inline-flex;
-    border: groove;
-    margin: 1em; }
-  .contenedor__grid .caja-3 {
-    grid-area: caja-3;
-    text-align: center;
-    padding: 1em;
-    margin: 1em; }
+        max-width: 600px;
+        margin: auto;
+        border-radius: .5em;
+        padding: 3.5em 1.5em;
+        margin-bottom: 2em; }
+        .contenido .contenedor__grid .caja-1 .form .form__container {
+          width: 100%;
+          display: grid;
+          gap: 1em;
+          grid-auto-columns: 100%; }
+          .contenido .contenedor__grid .caja-1 .form .form__container .form__title {
+            text-align: center;
+            font-size: 1.8rem;
+            text-decoration: underline;
+            margin-bottom: 1em; }
+          .contenido .contenedor__grid .caja-1 .form .form__container .form__input {
+            font-family: inherit;
+            font-size: 1rem;
+            padding: .8em 1em;
+            outline: none;
+            border: none;
+            border: 1px solid #dfdfdf;
+            border-radius: .2em; }
+          .contenido .contenedor__grid .caja-1 .form .form__container .form__input--message {
+            resize: none;
+            padding-bottom: 10em;
+            margin-bottom: .5em; }
+          .contenido .contenedor__grid .caja-1 .form .form__container .form__cta {
+            font-family: inherit;
+            font-size: 1rem;
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            font-weight: 300;
+            padding: .7em 0;
+            border-radius: .2em;
+            cursor: pointer; }
+    .contenido .contenedor__grid .caja-2 {
+      grid-area: caja-2;
+      display: inline-flex;
+      border: groove; }
+    .contenido .contenedor__grid .caja-3 {
+      grid-area: caja-3;
+      text-align: center;
+      padding: 1em; }
+    @media screen and (max-width: 768px) {
+      .contenido .contenedor__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "caja-1" "caja-2" "caja-3"; }
+        .contenido .contenedor__grid .caja-2 {
+          height: 400px; } }
 
 .gallery__conteiner {
   width: 100%;
