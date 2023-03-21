@@ -16,18 +16,34 @@
 
   .aiki{
     background-color: rgb(139, 34, 34);
+
+    &:hover{
+      background-color:  rgb(99, 14, 14);
+    }
   }
 
   .aikiKids{
     background-color: rgb(191, 64, 64);
+
+    &:hover{
+      background-color:  rgb(104, 28, 28);
+    }
   }
 
   .ninja{
     background-color: rgb(32, 35, 58) ;
+
+    &:hover{
+      background-color:  rgb(23, 26, 43);
+    }
   }
 
   .tae{
     background-color: rgb(47, 66, 60);
+
+    &:hover{
+      background-color:  rgb(28, 39, 36);
+    }
   }
 
   .colSeparadora{
@@ -59,7 +75,21 @@
     display: inline-block;
 
     h4{
-      text-decoration: underline;
+      color: white;
+      font-weight: 600;
+      padding: 5px;
+    }
+
+    .aiki{
+      background-color: rgb(147, 71, 71);
+    }
+
+    .ninja{
+      background-color: rgb(55, 59, 88) ;
+    }
+  
+    .tae{
+      background-color: rgb(62, 79, 73);
     }
 
   }

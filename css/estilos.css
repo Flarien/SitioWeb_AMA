@@ -67,10 +67,10 @@ header a {
     @media screen and (max-width: 768px) {
       .contenido h1 {
         font-weight: 400;
-        font-size: 24px; } }
+        font-size: 28px; } }
     @media screen and (max-width: 540px) {
       .contenido h1 {
-        font-size: 20px; } }
+        font-size: 24px; } }
   .contenido .parrafo {
     padding: 1em 4em 1em 4em;
     font-size: 20px; }
@@ -401,12 +401,20 @@ header a {
     padding: 20px; }
   .calendario .aiki {
     background-color: #8b2222; }
+    .calendario .aiki:hover {
+      background-color: #630e0e; }
   .calendario .aikiKids {
     background-color: #bf4040; }
+    .calendario .aikiKids:hover {
+      background-color: #681c1c; }
   .calendario .ninja {
     background-color: #20233a; }
+    .calendario .ninja:hover {
+      background-color: #171a2b; }
   .calendario .tae {
     background-color: #2f423c; }
+    .calendario .tae:hover {
+      background-color: #1c2724; }
   .calendario .colSeparadora {
     height: 3em; }
 
@@ -426,7 +434,15 @@ header a {
   .horariosMobile {
     display: inline-block; }
     .horariosMobile h4 {
-      text-decoration: underline; } }
+      color: white;
+      font-weight: 600;
+      padding: 5px; }
+    .horariosMobile .aiki {
+      background-color: #934747; }
+    .horariosMobile .ninja {
+      background-color: #373b58; }
+    .horariosMobile .tae {
+      background-color: #3e4f49; } }
 
 .tracking-in-expand-fwd-top {
   animation: tracking-in-expand-fwd-top 2s cubic-bezier(0.215, 0.61, 0.355, 1) both; }

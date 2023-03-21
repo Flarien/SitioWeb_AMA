@@ -12,11 +12,11 @@
 
     @include quiebre (tablet){
       font-weight: 400;
-      font-size: 24px;
+      font-size: 28px;
     }
 
     @include quiebre (mobile){
-      font-size: 20px;
+      font-size: 24px;
     }
   }
 
