@@ -23,9 +23,11 @@ a {
   margin-bottom: 0.5em; }
 
 .img {
-  width: 70%;
+  width: 20%;
   margin: 1em;
   display: inline-block; }
+  .img:hover {
+    width: 50%; }
 
 header nav {
   color: white;

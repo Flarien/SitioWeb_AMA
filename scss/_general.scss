@@ -33,7 +33,11 @@ a{
 }
 
 .img{
-  width: 70%;
+  width: 20%;
   margin: 1em;
   display: inline-block;
+
+  &:hover{
+    width: 50%;
+  }
   }
