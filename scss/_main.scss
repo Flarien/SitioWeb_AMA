@@ -110,6 +110,22 @@
   }
 }
 
+.parallax_banner--dojo{
+  width: 100%;
+  height: 400px;
+  background: center fixed no-repeat url("../assets/frenteDojo.webp") ;
+  background-size: cover;
+  margin: auto;
+  margin-bottom: 0.5em;
+
+  @include quiebre (tablet){
+    height: 350px;
+  }
+  
+  @include quiebre (mobile){
+    height: 300px;
+  }
+}
 
 // Carrusel
 .carousel-indicators-icons{
