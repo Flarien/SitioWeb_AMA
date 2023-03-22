@@ -479,6 +479,12 @@ header a {
     height: 4em; }
   .calendario .col-2 {
     padding: 20px; }
+    .calendario .col-2 p {
+      color: #a4a4a4;
+      font-style: italic;
+      font-size: 0.9rem;
+      margin-top: 0.7em;
+      margin-bottom: 0; }
   .calendario .aiki {
     background-color: #8b2222; }
     .calendario .aiki:hover {
@@ -506,7 +512,9 @@ header a {
   .calendario h5 {
     font-size: 1rem; }
   .calendario h6 {
-    font-size: 0.75rem; } }
+    font-size: 0.75rem; }
+  .calendario p {
+    font-size: 0.5rem; } }
 
 @media screen and (max-width: 540px) {
   .calendario {
