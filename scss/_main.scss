@@ -7,30 +7,63 @@
   h1{
     text-decoration: underline ;
     text-align: center;
-    font-weight: 600;
-    font-size: 4vw;
     padding-top: 1.5em;
+    font-weight: 600;
+    font-size: 38px;
+
+    @include quiebre (tablet){
+      font-size: 35px;
+    }
+    
+    @include quiebre (mobile){
+      font-weight: 400;
+      font-size: 30px;
+    }
   }
 
   h2{
     text-align: center;
     font-weight: 500;
-    font-size: 3.5vw;
+    font-size: 32px;
+
+    @include quiebre (tablet){
+      font-size: 28px;
+    }
+    
+    @include quiebre (mobile){
+      font-size: 24px;
+    }
   }
 
   h3{
     text-align: center;
     font-weight: 400;
-    font-size: 2.5vw;
+    font-size: 28px;
+
+    @include quiebre (tablet){
+      font-size: 24px;
+    }
+    
+    @include quiebre (mobile){
+      font-size: 20px;
+    }
   }
 
   .parrafo{
     padding: 1em 4em 1em 4em;
-    font-size: 2vw;
+    font-size: 24px;
+
+    @include quiebre (tablet){
+      font-size: 20px;
+    }
+    
+    @include quiebre (mobile){
+      font-size: 18px;
+    }
   }
 
   .contenido--textoLargo{
-    font-size: 2vw;
+    font-size: 18px;
     font-family: inherit serif;
     text-align: left;
     padding: 3em;
@@ -76,9 +109,18 @@
     color: #fff;
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 3.5vw;
     -webkit-text-stroke: .1vw black;
     letter-spacing: .2vw;
+    font-size: 34px;
+
+    @include quiebre (tablet){
+      font-size: 30px;
+    }
+    
+    @include quiebre (mobile){
+      font-size: 26px;
+    }
+
   }
 }
 
@@ -172,17 +214,33 @@
           place-content: center;
 
           .text-title {
-            font-size: 2.5vw;
-            font-weight: 600;
             text-transform: uppercase;
             text-align: center;
             text-decoration: underline;
+            font-weight: 500;
+            font-size: 30px;
+        
+            @include quiebre (tablet){
+              font-size: 28px;
+            }
+            
+            @include quiebre (mobile){
+              font-size: 24px;
+            }
           }
           
           .text-body {
-            font-size: 1.5vw;
             color: rgb(134, 134, 134);
             text-align: center;
+            font-size: 22px;
+        
+            @include quiebre (tablet){
+              font-size: 18px;
+            }
+            
+            @include quiebre (mobile){
+              font-size: 14px;
+            }
           }
         } 
         

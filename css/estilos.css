@@ -64,22 +64,47 @@ header a {
   .contenido h1 {
     text-decoration: underline;
     text-align: center;
+    padding-top: 1.5em;
     font-weight: 600;
-    font-size: 4vw;
-    padding-top: 1.5em; }
+    font-size: 38px; }
+    @media screen and (max-width: 768px) {
+      .contenido h1 {
+        font-size: 35px; } }
+    @media screen and (max-width: 540px) {
+      .contenido h1 {
+        font-weight: 400;
+        font-size: 30px; } }
   .contenido h2 {
     text-align: center;
     font-weight: 500;
-    font-size: 3.5vw; }
+    font-size: 32px; }
+    @media screen and (max-width: 768px) {
+      .contenido h2 {
+        font-size: 28px; } }
+    @media screen and (max-width: 540px) {
+      .contenido h2 {
+        font-size: 24px; } }
   .contenido h3 {
     text-align: center;
     font-weight: 400;
-    font-size: 2.5vw; }
+    font-size: 28px; }
+    @media screen and (max-width: 768px) {
+      .contenido h3 {
+        font-size: 24px; } }
+    @media screen and (max-width: 540px) {
+      .contenido h3 {
+        font-size: 20px; } }
   .contenido .parrafo {
     padding: 1em 4em 1em 4em;
-    font-size: 2vw; }
+    font-size: 24px; }
+    @media screen and (max-width: 768px) {
+      .contenido .parrafo {
+        font-size: 20px; } }
+    @media screen and (max-width: 540px) {
+      .contenido .parrafo {
+        font-size: 18px; } }
   .contenido .contenido--textoLargo {
-    font-size: 2vw;
+    font-size: 18px;
     font-family: inherit serif;
     text-align: left;
     padding: 3em;
@@ -113,9 +138,15 @@ header a {
     color: #fff;
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 3.5vw;
     -webkit-text-stroke: .1vw black;
-    letter-spacing: .2vw; }
+    letter-spacing: .2vw;
+    font-size: 34px; }
+    @media screen and (max-width: 768px) {
+      .parallax_banner .h2--blanco {
+        font-size: 30px; } }
+    @media screen and (max-width: 540px) {
+      .parallax_banner .h2--blanco {
+        font-size: 26px; } }
 
 .parallax_banner--kanji {
   width: 100%;
@@ -191,15 +222,27 @@ header a {
         display: grid;
         place-content: center; }
         .articulosVarios .container__cards .card .card-details .text-title {
-          font-size: 2.5vw;
-          font-weight: 600;
           text-transform: uppercase;
           text-align: center;
-          text-decoration: underline; }
+          text-decoration: underline;
+          font-weight: 500;
+          font-size: 30px; }
+          @media screen and (max-width: 768px) {
+            .articulosVarios .container__cards .card .card-details .text-title {
+              font-size: 28px; } }
+          @media screen and (max-width: 540px) {
+            .articulosVarios .container__cards .card .card-details .text-title {
+              font-size: 24px; } }
         .articulosVarios .container__cards .card .card-details .text-body {
-          font-size: 1.5vw;
           color: #868686;
-          text-align: center; }
+          text-align: center;
+          font-size: 22px; }
+          @media screen and (max-width: 768px) {
+            .articulosVarios .container__cards .card .card-details .text-body {
+              font-size: 18px; } }
+          @media screen and (max-width: 540px) {
+            .articulosVarios .container__cards .card .card-details .text-body {
+              font-size: 14px; } }
       .articulosVarios .container__cards .card .card-button {
         transform: translate(-50%, 125%);
         width: 60%;
@@ -282,9 +325,16 @@ header a {
           grid-auto-columns: 100%; }
           .contenido .contenedor__grid .caja-1 .form .form__container .form__title {
             text-align: center;
-            font-size: 2.5vw;
             text-decoration: underline;
-            margin-bottom: 1em; }
+            margin-bottom: 1em;
+            font-weight: 400;
+            font-size: 30px; }
+            @media screen and (max-width: 768px) {
+              .contenido .contenedor__grid .caja-1 .form .form__container .form__title {
+                font-size: 28px; } }
+            @media screen and (max-width: 540px) {
+              .contenido .contenedor__grid .caja-1 .form .form__container .form__title {
+                font-size: 24px; } }
           .contenido .contenedor__grid .caja-1 .form .form__container .form__input {
             font-family: inherit;
             font-size: 1rem;
