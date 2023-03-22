@@ -129,7 +129,7 @@ header a {
       height: 280px; } }
   @media screen and (max-width: 540px) {
     .parallax_banner--kanji {
-      height: 250px; } }
+      display: none; } }
 
 .parallax_banner--dojo {
   width: 100%;
@@ -143,7 +143,7 @@ header a {
       height: 350px; } }
   @media screen and (max-width: 540px) {
     .parallax_banner--dojo {
-      height: 300px; } }
+      display: none; } }
 
 .carousel-indicators-icons {
   background-color: gray !important; }
@@ -155,6 +155,10 @@ header a {
 .carousel-control-next {
   background-image: linear-gradient(to right, white, #902c2c);
   width: 4em; }
+
+@media screen and (max-width: 540px) {
+  .carousel {
+    display: none; } }
 
 .articulosVarios {
   width: 100%;
