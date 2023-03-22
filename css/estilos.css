@@ -115,10 +115,28 @@ header a {
       float: right;
       width: 25em;
       margin: 15px; }
+      @media screen and (max-width: 768px) {
+        .contenido .contenido--textoLargo .img1 {
+          width: 20em;
+          margin: 10px; } }
+      @media screen and (max-width: 540px) {
+        .contenido .contenido--textoLargo .img1 {
+          float: none;
+          width: 15em;
+          margin: auto; } }
     .contenido .contenido--textoLargo .img2 {
       float: left;
       width: 25em;
       margin: 15px; }
+      @media screen and (max-width: 768px) {
+        .contenido .contenido--textoLargo .img2 {
+          width: 20em;
+          margin: 10px; } }
+      @media screen and (max-width: 540px) {
+        .contenido .contenido--textoLargo .img2 {
+          float: none;
+          width: 15em;
+          margin: auto; } }
 
 .parallax_banner {
   width: 100%;

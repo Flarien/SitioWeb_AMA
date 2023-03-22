@@ -75,12 +75,34 @@
       float: right;
       width: 25em;
       margin: 15px;
+
+      @include quiebre (tablet){
+        width: 20em;
+        margin: 10px;
+      }
+
+      @include quiebre (mobile){
+        float: none;
+        width: 15em;
+        margin: auto;
+      }
     }
 
     .img2{
       float: left;
       width: 25em;
       margin: 15px;
+
+      @include quiebre (tablet){
+        width: 20em;
+        margin: 10px;
+      }
+
+      @include quiebre (mobile){
+        float: none;
+        width: 15em;
+        margin: auto;
+      }
     }
   }
 
