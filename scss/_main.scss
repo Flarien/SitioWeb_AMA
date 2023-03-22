@@ -50,14 +50,16 @@
   }
 
   .parrafo{
-    padding: 1em 4em 1em 4em;
+    padding: 1em 4em;
     font-size: 24px;
 
     @include quiebre (tablet){
+      padding: 1em 3em;
       font-size: 20px;
     }
     
     @include quiebre (mobile){
+      padding: 1em 1.5em;
       font-size: 18px;
     }
   }
@@ -133,7 +135,7 @@
   margin-bottom: 0.5em;
 
   @include quiebre (tablet){
-    height: 280px;
+    display: none;
   }
   
   @include quiebre (mobile){

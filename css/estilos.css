@@ -95,13 +95,15 @@ header a {
       .contenido h3 {
         font-size: 20px; } }
   .contenido .parrafo {
-    padding: 1em 4em 1em 4em;
+    padding: 1em 4em;
     font-size: 24px; }
     @media screen and (max-width: 768px) {
       .contenido .parrafo {
+        padding: 1em 3em;
         font-size: 20px; } }
     @media screen and (max-width: 540px) {
       .contenido .parrafo {
+        padding: 1em 1.5em;
         font-size: 18px; } }
   .contenido .contenido--textoLargo {
     font-size: 18px;
@@ -157,7 +159,7 @@ header a {
   margin-bottom: 0.5em; }
   @media screen and (max-width: 768px) {
     .parallax_banner--kanji {
-      height: 280px; } }
+      display: none; } }
   @media screen and (max-width: 540px) {
     .parallax_banner--kanji {
       display: none; } }
