@@ -1,3 +1,5 @@
+//Consulta por grupo ideal: la idea sería agregar un botón, en la página de las clases, para que las personas se quiten la duda de en qué horario entrarían, en el caso de que la tengan (especialmente para los niños/adolescentes, es una duda recurrente)
+
 function calcularHorarioAikido(edad) {
   if (edad < 4) {
     return "La edad mínima para comenzar es de 4 años... ¡Esperemos un poquito más! 😊";
