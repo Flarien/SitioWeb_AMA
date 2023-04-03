@@ -18,7 +18,7 @@ function grupoAikido(edad) {
 
 //Este alert podría ser reemplazado por un botón, más adelante.
 alert(
-  "¡Bienvenido! Aquí podrás consultar en qué grupo de Aikido entrarías, según la edad :)"
+  "¡Bienvenido! Aquí podrás consultar en qué grupo de Aikido entrarías, según la edad 😊"
 );
 
 //Declaración de la variable, cuyo valor ingresará el usuario.
