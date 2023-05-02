@@ -75,7 +75,7 @@ let modo_oscuro = localStorage.getItem("modo_oscuro");
 //Creo una función a partir del evento "click" que ejecute el cambio de un modo al otro (por medio de un control de flujo) y guarde en el Local Storage el valor de si está activado o no. Además, cambia el ícono de la luna y el sol, según el modo a activar.
 btnModo.addEventListener("click", () => {
   body.classList.toggle("modo_oscuro");
-  articulos.classList.toggle("modo_oscuro");
+  articulos.classList.toggle("articulosVarios modo_oscuro");
 
   if (body.classList.contains("modo_oscuro")) {
     btnModo.innerHTML =
@@ -91,4 +91,4 @@ btnModo.addEventListener("click", () => {
 //Por último, y por fuera de la función, ejecuto un flujo que permita guardar en que modo dejó su usuario el sitio, la última vez que lo usó (cambié el if else por un operador ternario, para optimizar y simplificar el código... aunque aún me estoy acostumbrando)
 
 body.className = modo_oscuro === "activado" ? "modo_oscuro" : "";
-articulos.className = modo_oscuro === "activado" ? "modo_oscuro" : "";
+articulos.className = modo_oscuro === "activado" ? "articulosVarios modo_oscuro" : "articulosVarios";
