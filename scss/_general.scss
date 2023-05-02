@@ -10,10 +10,20 @@
 
 //Estilo general
 
-.estiloGral{
+body{
   font-family: 'Libre Franklin', sans-serif;
   background-image: $backgroundGradient;
+  transition: .5s ease all;
+
+  &.modo_oscuro{
+    background-image: $backgroundGradientDark;
+    color: #cfcfcf;
+  }
+    
 }
+
+//Modo claro / Modo oscuro
+
 
 a{
   text-decoration: none;
