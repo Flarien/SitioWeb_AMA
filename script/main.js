@@ -89,6 +89,10 @@ btnModo.addEventListener("click", () => {
 });
 
 //Por último, y por fuera de la función, ejecuto un flujo que permita guardar en que modo dejó su usuario el sitio, la última vez que lo usó (cambié el if else por un operador ternario, para optimizar y simplificar el código... aunque aún me estoy acostumbrando)
-
-body.className = modo_oscuro === "activado" ? "modo_oscuro" : "";
-articulos.className = modo_oscuro === "activado" ? "articulosVarios modo_oscuro" : "articulosVarios";
+if (modo_oscuro === "activado") {
+  body.className.add("modo_oscuro");
+  articulos.className.add("modo_oscuro");
+} else {
+  body.className.remove("modo_oscuro");
+  articulos.className.remove("modo_oscuro");
+}
