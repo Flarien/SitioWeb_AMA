@@ -20,22 +20,17 @@ function grupoAikido(edad) {
   switch (grupo) {
     case GRUPOS_AIKIDO[0]:
       return("Le corresponde el horario de Aikido Kids (revisar grilla 👆 ).");
-      break;
     case GRUPOS_AIKIDO[1]:
       return("Le corresponde el horario de Adultos (revisar grilla 👆 ), pero te recomendamos el horario de - lun, mie y vie a las 19:30hs - , ya que hay un buen grupo de adolescentes practicando ahí 👍"
       );
-      break;
     case GRUPOS_AIKIDO[2]:
       return("Le corresponde el horario de Adultos (revisar grilla 👆 ).");
-      break;
     case GRUPOS_AIKIDO[3]:
       return("Le corresponde el horario de Adultos (revisar grilla 👆 ). Por cierto: no hay edad máxima para comenzar ¡Te esperamos!😉"
       );
-      break;
     default:
       return("La edad mínima para comenzar es de 4 años... ¡Esperemos un poquito más! 😊"
       );
-      break;
   }
 }
 
@@ -52,7 +47,7 @@ botonConsulta.addEventListener("click", () => {
     return;
   }
 
-  grupo = grupoAikido(parseInt(edadAlumno));
+  const grupo = grupoAikido(parseInt(edadAlumno));
   respuesta.textContent = grupo;
 });
 
