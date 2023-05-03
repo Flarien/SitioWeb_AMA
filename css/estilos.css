@@ -225,7 +225,7 @@ header a {
   width: 100%;
   margin: 30px auto;
   padding: 3em 1.5em;
-  background-color: #c4c4c4; }
+  background-color: #757575; }
   .articulosVarios .cards-title {
     display: flex;
     justify-content: center; }
@@ -238,7 +238,7 @@ header a {
       width: 250px;
       height: 350px;
       border-radius: 20px;
-      background: #929292;
+      background: #949494;
       position: relative;
       padding: 1em;
       border: 2px solid #c3c6ce;
@@ -303,10 +303,6 @@ header a {
         flex-direction: column;
         justify-content: center;
         align-items: center; } }
-
-.modo_oscuro {
-  background-color: #414141;
-  color: #cfcfcf; }
 
 .btn__wapp {
   position: fixed;

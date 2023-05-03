@@ -210,7 +210,7 @@
   width: 100%;
   margin: 30px auto;
   padding: 3em 1.5em;
-  background-color: rgb(196, 196, 196);
+  background-color: #757575;
 
     .cards-title{
       display: flex;
@@ -224,7 +224,7 @@
         width: 250px;
         height: 350px;
         border-radius: 20px;
-        background: #929292;
+        background: #949494;
         position: relative;
         padding: 1em;
         border: 2px solid #c3c6ce;
@@ -307,14 +307,9 @@
         }
       }
 
-      
-
   }
 
-.modo_oscuro{
-        background-color: #414141;
-        color: #cfcfcf; 
-      }
+
 
 // Botón de WhatsApp
 .btn__wapp{
