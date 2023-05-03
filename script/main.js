@@ -1,4 +1,4 @@
-// Consulta por Grupo/Horario Ideal.
+// ---- CONSULTA POR GRUPO IDEAL ---- //
 
 
 // Grupos de Aikido con sus edades mínimas y máximas correspondientes.
@@ -19,17 +19,17 @@ function grupoAikido(edad) {
   //Utilizo un <switch> para dividir los grupos. De acuerdo a la edad, devuelve el mensaje correspondiente.
   switch (grupo) {
     case GRUPOS_AIKIDO[0]:
-      return("Le corresponde el horario de Aikido Kids (revisar grilla).");
+      return("Le corresponde el horario de Aikido Kids (revisar grilla 👆 ).");
       break;
     case GRUPOS_AIKIDO[1]:
-      return("Le corresponde el horario de Adultos (revisar grilla), pero te recomendamos el horario de - lun, mie y vie a las 19:30hs - , ya que hay un buen grupo de adolescentes practicando ahí 👍"
+      return("Le corresponde el horario de Adultos (revisar grilla 👆 ), pero te recomendamos el horario de - lun, mie y vie a las 19:30hs - , ya que hay un buen grupo de adolescentes practicando ahí 👍"
       );
       break;
     case GRUPOS_AIKIDO[2]:
-      return("Le corresponde el horario de Adultos (revisar grilla).");
+      return("Le corresponde el horario de Adultos (revisar grilla 👆 ).");
       break;
     case GRUPOS_AIKIDO[3]:
-      return("Le corresponde el horario de Adultos (revisar grilla). Por cierto: no hay edad máxima para comenzar ¡Te esperamos!😉"
+      return("Le corresponde el horario de Adultos (revisar grilla 👆 ). Por cierto: no hay edad máxima para comenzar ¡Te esperamos!😉"
       );
       break;
     default:
@@ -39,7 +39,7 @@ function grupoAikido(edad) {
   }
 }
 
-//Declaración de las constantes y su conección con los elementos del HTML.
+//Declaración de las constantes y su conexión con los elementos del HTML.
 const botonConsulta = document.getElementById("boton_consulta");
 const respuesta = document.getElementById("respuesta_consulta");
 
@@ -58,10 +58,10 @@ botonConsulta.addEventListener("click", () => {
 
 
 
-// --- MODO CLARO / MODO OSCURO --- //
+
+// ---- MODO CLARO / MODO OSCURO ---- //
 
 // Se declaran la variables necesarias para utilizar luego en la función y poder agregarles el evento o clase y quede lo más organizado, prolijo y lejible posible:
-
 let btnModo = document.getElementById("modo");
 let body = document.body;
 let modo_oscuro = localStorage.getItem("modo_oscuro");
@@ -82,5 +82,4 @@ btnModo.addEventListener("click", () => {
 });
 
 //Por último, y por fuera de la función, ejecuto un flujo que permita guardar en que modo dejó su usuario el sitio, la última vez que lo usó (cambié el if else por un operador ternario, para optimizar y simplificar el código... aunque aún me estoy acostumbrando)
-
 body.className = modo_oscuro === "activado" ? "modo_oscuro" : "";
