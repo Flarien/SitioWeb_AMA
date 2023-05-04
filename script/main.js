@@ -11,11 +11,11 @@ btnModo.addEventListener("click", () => {
 
   if (body.classList.contains("modo_oscuro")) {
     btnModo.innerHTML =
-      "<img src='./assets/iconSol.svg' alt='Icono para pasar a modo claro'>";
+      "<img src='/assets/iconSol.svg' alt='Icono para pasar a modo claro'>";
     localStorage.setItem("modo_oscuro", "activado");
   } else {
     btnModo.innerHTML =
-      "<img src='./assets/iconLuna.svg' alt='Icono para pasar a modo oscuro'>";
+      "<img src='/assets/iconLuna.svg' alt='Icono para pasar a modo oscuro'>";
     localStorage.setItem("modo_oscuro", "desactivado");
   }
 });
