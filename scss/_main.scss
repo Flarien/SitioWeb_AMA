@@ -333,11 +333,17 @@
     }
   }
 
-  .consultaGrupo__input{
-    width: 3em;
+  .consultaGrupo__btn{
+    width: 8em;
     padding: 0.5em;
-    margin: 1em;
-    border-color: rgb(186, 186, 186);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    text-shadow: 4px 3px 3px rgba(86,86,86,0.6);
+    text-transform: uppercase;
+    background-color: #757575;
+    border-color: rgb(106, 6, 6);
     border-style: solid; 
     border-width: 4px;
     border-radius: 0.375rem;
@@ -346,10 +352,10 @@
 
     &:focus {
       box-shadow: 2px 2px 4px 0px rgba(169, 48, 48, 0.638);
-
      }
   }
 }
+
 
 // Botón de WhatsApp
 .btn__wapp{

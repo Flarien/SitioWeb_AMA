@@ -321,17 +321,23 @@ header a {
     @media screen and (max-width: 540px) {
       .consultaGrupo .consultaGrupo__texto {
         font-size: 18px; } }
-  .consultaGrupo .consultaGrupo__input {
-    width: 3em;
+  .consultaGrupo .consultaGrupo__btn {
+    width: 8em;
     padding: 0.5em;
-    margin: 1em;
-    border-color: #bababa;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    text-shadow: 4px 3px 3px rgba(86, 86, 86, 0.6);
+    text-transform: uppercase;
+    background-color: #757575;
+    border-color: #6a0606;
     border-style: solid;
     border-width: 4px;
     border-radius: 0.375rem;
     transition: 0.3s;
     outline: 0; }
-    .consultaGrupo .consultaGrupo__input:focus {
+    .consultaGrupo .consultaGrupo__btn:focus {
       box-shadow: 2px 2px 4px 0px rgba(169, 48, 48, 0.638); }
 
 .btn__wapp {

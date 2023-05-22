@@ -40,6 +40,46 @@ const GRUPOS_AIKIDO = [
   { grupo: "Adultos mayores", edadMin: 70, edadMax: Infinity },
 ];
 
+// Función flecha que muestra el alert, permitiendo al usuario ingresar la edad.
+function mostrarAlerta () {
+
+  Swal.fire({
+
+    title: "Ingresa la edad",
+    input: "number",
+    inputLabel: "Años",
+    inputAttributes: {
+      min: 1,
+      max: Infinity,
+      step: 1
+    },
+    inputValue: 1,
+    showCancelButton: true,
+    confirmButtonText: "Consultar",
+    cancelButtonText: "Cancelar",
+    showLoaderOnConfirm: true,
+    //Aplicando el concepto de AJAX, con la función del SwetAlert2, para obtener la edad ingresada en un n° entero.
+    preConfirm: (value) => {
+      const edadAlumno = parseInt(value);
+      return new Promise ((resolve) => {
+        setTimeout(() => {
+          resolve (edadAlumno);
+        }, 1000);
+      });
+    },
+
+  }
+  //Se utiliza una promesa para devolver la respuesta.
+  ).then((result) => {
+    if (result.isConfirmed) {
+      const edadAlumno = result.value;
+      const grupo = grupoAikido(edadAlumno);
+      mostrarRespuesta(grupo);
+    }
+  });
+}
+
+
 //Luego declaro la <función> que engloba los distintos grupos, según la edad--> condicional.
 function grupoAikido(edad) {
   //Se declara una constante que utiliza una función de orden superior para encontrar cada objeto en el array.
@@ -65,22 +105,12 @@ function grupoAikido(edad) {
   }
 }
 
-//Declaración de las constantes y su conexión con los elementos del HTML.
+//Declaro la función que mostrará la respuesta en el alert
+function mostrarRespuesta(respuesta) {
+  Swal.fire("Resultado", respuesta, "success");
+}
+
+//Primero conecto el boton consulta del HTML, trayéndolo con su ID, con la variable botonConsulta, y luego le agrego el evento click, conectándola con la función mostrarAlerta, para que se ejecute al usuario hacer el click correspondiente.
 const botonConsulta = document.getElementById("boton_consulta");
-const respuesta = document.getElementById("respuesta_consulta");
-
-//Ahora conecto el boton de la consulta con el evento click, dentro declaro la variable edadAlumno con el id del input por donde ingresa el valor el usuario. Me aseguro que ingrese un dato válido y luego llamo a la función y doy la respuesta en el lugar correspondiente.
-botonConsulta.addEventListener("click", () => {
-  let edadAlumno = document.getElementById("edadAlumno").value;
-
-  if (isNaN(edadAlumno) || edadAlumno.trim() === "") {
-    respuesta.textContent = "Por favor, ingrese una edad válida.";
-    return;
-  }
-
-  const grupo = grupoAikido(parseInt(edadAlumno));
-  respuesta.textContent = grupo;
-});
-
-
+botonConsulta.addEventListener("click", mostrarAlerta);
 
