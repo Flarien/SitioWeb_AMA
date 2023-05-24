@@ -168,8 +168,8 @@ header a {
     color: #fff;
     text-transform: uppercase;
     font-weight: bolder;
-    -webkit-text-stroke: .1vw black;
-    letter-spacing: .2vw;
+    -webkit-text-stroke: 0.1vw black;
+    letter-spacing: 0.2vw;
     font-size: 34px; }
     @media screen and (max-width: 768px) {
       .parallax_banner .h2--blanco {
@@ -248,7 +248,7 @@ header a {
       .articulosVarios .container__cards .card .card-details {
         color: black;
         height: 100%;
-        gap: .5em;
+        gap: 0.5em;
         display: grid;
         place-content: center; }
         .articulosVarios .container__cards .card .card-details .text-title {
@@ -281,7 +281,7 @@ header a {
         background-color: #8d0000;
         color: white;
         font-size: 1rem;
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
         position: absolute;
         left: 50%;
         bottom: 0;
@@ -339,6 +339,25 @@ header a {
     outline: 0; }
     .consultaGrupo .consultaGrupo__btn:focus {
       box-shadow: 2px 2px 4px 0px rgba(169, 48, 48, 0.638); }
+
+.contenedorFaqs .faqsItems {
+  margin: 3em 0 2em 0; }
+  .contenedorFaqs .faqsItems .pregunta {
+    cursor: pointer;
+    font-weight: 600; }
+    .contenedorFaqs .faqsItems .pregunta:hover {
+      color: #8d0000;
+      font-weight: bold;
+      text-shadow: 2px 2px 0.5px rgba(179, 179, 179, 0.391); }
+  .contenedorFaqs .faqsItems .respuesta {
+    display: none;
+    padding: 0.5em 8em 0 8em;
+    font-size: medium; }
+  .contenedorFaqs .faqsItems.active .respuesta {
+    display: block; }
+
+.pregunta:hover {
+  color: aqua; }
 
 .btn__wapp {
   position: fixed;

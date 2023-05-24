@@ -27,5 +27,3 @@ body.className = modo_oscuro === "activado" ? "modo_oscuro" : "";
 
 // ------- ******* soy un separador******* ------- //
 
-
-

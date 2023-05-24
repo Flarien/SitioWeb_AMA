@@ -1,87 +1,87 @@
 /* Parrafos, contenido y texto */
 
-.contenido{
+.contenido {
   text-align: center;
   margin: 2em 0;
 
-  h1{
-    text-decoration: underline ;
+  h1 {
+    text-decoration: underline;
     text-align: center;
     padding-top: 1.5em;
     font-weight: 600;
     font-size: 38px;
 
-    @include quiebre (tablet){
+    @include quiebre(tablet) {
       font-size: 35px;
     }
-    
-    @include quiebre (mobile){
+
+    @include quiebre(mobile) {
       font-weight: 400;
       font-size: 30px;
     }
   }
 
-  h2{
+  h2 {
     text-align: center;
     font-weight: 500;
     font-size: 32px;
 
-    @include quiebre (tablet){
+    @include quiebre(tablet) {
       font-size: 28px;
     }
-    
-    @include quiebre (mobile){
+
+    @include quiebre(mobile) {
       font-size: 24px;
     }
   }
 
-  h3{
+  h3 {
     text-align: center;
     font-weight: 400;
     font-size: 28px;
 
-    @include quiebre (tablet){
+    @include quiebre(tablet) {
       font-size: 24px;
     }
-    
-    @include quiebre (mobile){
+
+    @include quiebre(mobile) {
       font-size: 20px;
     }
   }
 
-  .parrafo{
+  .parrafo {
     padding: 1em 4em;
     font-size: 24px;
 
-    @include quiebre (tablet){
+    @include quiebre(tablet) {
       padding: 1em 3em;
       font-size: 20px;
     }
-    
-    @include quiebre (mobile){
+
+    @include quiebre(mobile) {
       padding: 1em 1.5em;
       font-size: 18px;
     }
   }
 
-  .contenido--textoLargo{
+  .contenido--textoLargo {
     font-size: 18px;
     font-family: inherit serif;
     text-align: left;
     padding: 3em;
     text-indent: 3em;
 
-    .img1{
+    .img1 {
       float: right;
       width: 25em;
       margin: 15px;
 
-      @include quiebre (tablet){
+      @include quiebre(tablet) {
         width: 20em;
         margin: 10px;
       }
 
-      @include quiebre (mobile){
+      @include quiebre(mobile) {
         float: none;
         width: 18em;
         margin: auto;
@@ -89,17 +89,17 @@
       }
     }
 
-    .img2{
+    .img2 {
       float: left;
       width: 25em;
       margin: 15px;
 
-      @include quiebre (tablet){
+      @include quiebre(tablet) {
         width: 20em;
         margin: 10px;
       }
 
-      @include quiebre (mobile){
+      @include quiebre(mobile) {
         float: none;
         width: 18em;
         margin: auto;
@@ -107,244 +107,247 @@
       }
     }
   }
-
 }
 
-
-// Parallax Banner 
-.parallax_banner{
+// Parallax Banner
+.parallax_banner {
   width: 100%;
   height: 400px;
-  background: center fixed no-repeat url("../assets/dojopanoramica.webp") ;
+  background: center fixed no-repeat url("../assets/dojopanoramica.webp");
   background-size: cover;
   margin: auto;
   margin-bottom: 2em;
 
-  @include quiebre (tablet){
+  @include quiebre(tablet) {
     height: 350px;
   }
-  
-  @include quiebre (mobile){
+
+  @include quiebre(mobile) {
     height: 300px;
   }
-  
-  .h2--blanco{
+
+  .h2--blanco {
     text-align: center;
     padding: 40px 20px;
     margin: auto;
     color: #fff;
     text-transform: uppercase;
     font-weight: bolder;
-    -webkit-text-stroke: .1vw black;
-    letter-spacing: .2vw;
+    -webkit-text-stroke: 0.1vw black;
+    letter-spacing: 0.2vw;
     font-size: 34px;
 
-    @include quiebre (tablet){
+    @include quiebre(tablet) {
       font-size: 30px;
     }
-    
-    @include quiebre (mobile){
+
+    @include quiebre(mobile) {
       font-size: 26px;
     }
-
   }
 }
 
-.parallax_banner--kanji{
+.parallax_banner--kanji {
   width: 100%;
   height: 300px;
-  background: center fixed no-repeat url("../assets/kanji.webp") ;
+  background: center fixed no-repeat url("../assets/kanji.webp");
   background-size: cover;
   margin: auto;
   margin-bottom: 0.5em;
 
-  @include quiebre (tablet){
+  @include quiebre(tablet) {
     display: none;
   }
-  
-  @include quiebre (mobile){
+
+  @include quiebre(mobile) {
     display: none;
   }
 }
 
-.parallax_banner--dojo{
+.parallax_banner--dojo {
   width: 100%;
   height: 400px;
-  background: center fixed no-repeat url("../assets/frenteDojo.webp") ;
+  background: center fixed no-repeat url("../assets/frenteDojo.webp");
   background-size: cover;
   margin: auto;
   margin-bottom: 0.5em;
 
-  @include quiebre (tablet){
+  @include quiebre(tablet) {
     height: 350px;
   }
-  
-  @include quiebre (mobile){
+
+  @include quiebre(mobile) {
     display: none;
   }
 }
 
 // Carrusel
-.carousel-indicators-icons{
+.carousel-indicators-icons {
   background-color: gray !important;
 }
 
-.carousel-control-prev{
-  background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(144, 44, 44));
+.carousel-control-prev {
+  background-image: linear-gradient(
+    to left,
+    rgb(255, 255, 255),
+    rgb(144, 44, 44)
+  );
   width: 4em;
 }
 
-.carousel-control-next{
-  background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(144, 44, 44));
+.carousel-control-next {
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgb(144, 44, 44)
+  );
   width: 4em;
 }
 
-.carousel{
-  @include quiebre (mobile){
+.carousel {
+  @include quiebre(mobile) {
     display: none;
   }
 }
 
 // Articulos Varios
-.articulosVarios{
+.articulosVarios {
   width: 100%;
   margin: 30px auto;
   padding: 3em 1.5em;
   background-color: #757575;
 
-    .cards-title{
-      display: flex;
-      justify-content: center;
-    }
-    
-    .container__cards{
-      @include flex (row, center, center);
+  .cards-title {
+    display: flex;
+    justify-content: center;
+  }
 
-      .card {
-        width: 250px;
-        height: 350px;
-        border-radius: 20px;
-        background: #949494;
-        position: relative;
-        padding: 1em;
-        border: 2px solid #c3c6ce;
-        transition: 0.5s ease-out;
-        overflow: visible;
-        margin: 30px;
+  .container__cards {
+    @include flex(row, center, center);
 
-          .card-details {
-            color: black;
-            height: 100%;
-            gap: .5em;
-            display: grid;
-            place-content: center;
+    .card {
+      width: 250px;
+      height: 350px;
+      border-radius: 20px;
+      background: #949494;
+      position: relative;
+      padding: 1em;
+      border: 2px solid #c3c6ce;
+      transition: 0.5s ease-out;
+      overflow: visible;
+      margin: 30px;
 
-            .text-title {
-              text-transform: uppercase;
-              text-align: center;
-              text-decoration: underline;
-              font-weight: 500;
-              font-size: 30px;
-          
-              @include quiebre (tablet){
-                font-size: 28px;
-              }
-              
-              @include quiebre (mobile){
-                font-size: 24px;
-              }
-            }
-            
-            .text-body {
-              color: rgb(134, 134, 134);
-              text-align: center;
-              font-size: 22px;
-          
-              @include quiebre (tablet){
-                font-size: 18px;
-              }
-              
-              @include quiebre (mobile){
-                font-size: 14px;
-              }
-            }
-          } 
-          
-          .card-button {
-            transform: translate(-50%, 125%);
-            width: 60%;
-            border-radius: 1rem;
-            border: none;
-            background-color: $colorGeneral;
-            color: $colorEnlaces;
-            font-size: 1rem;
-            padding: .5rem 1rem;
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            opacity: 0;
-            transition: 0.3s ease-out;
+      .card-details {
+        color: black;
+        height: 100%;
+        gap: 0.5em;
+        display: grid;
+        place-content: center;
+
+        .text-title {
+          text-transform: uppercase;
+          text-align: center;
+          text-decoration: underline;
+          font-weight: 500;
+          font-size: 30px;
+
+          @include quiebre(tablet) {
+            font-size: 28px;
           }
 
-      @include quiebre(mobile){
-        width: 200px;
-        height: 280px;
-      }
-      }
-    
-      .card:hover {
-        border-color: $colorGeneral;
-        box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-      }
-      
-      .card:hover .card-button {
-        transform: translate(-50%, 50%);
-        opacity: 1;
-      }
-      
-      @include quiebre (tablet){
-        @include flex (column, center, center)
+          @include quiebre(mobile) {
+            font-size: 24px;
+          }
+        }
+
+        .text-body {
+          color: rgb(134, 134, 134);
+          text-align: center;
+          font-size: 22px;
+
+          @include quiebre(tablet) {
+            font-size: 18px;
+          }
+
+          @include quiebre(mobile) {
+            font-size: 14px;
+          }
         }
       }
 
-  }
+      .card-button {
+        transform: translate(-50%, 125%);
+        width: 60%;
+        border-radius: 1rem;
+        border: none;
+        background-color: $colorGeneral;
+        color: $colorEnlaces;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        opacity: 0;
+        transition: 0.3s ease-out;
+      }
 
+      @include quiebre(mobile) {
+        width: 200px;
+        height: 280px;
+      }
+    }
+
+    .card:hover {
+      border-color: $colorGeneral;
+      box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .card:hover .card-button {
+      transform: translate(-50%, 50%);
+      opacity: 1;
+    }
+
+    @include quiebre(tablet) {
+      @include flex(column, center, center);
+    }
+  }
+}
 
 //Botón de Consulta de Grupo/Horario
-.consultaGrupo{
+.consultaGrupo {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 2em;
 
-  .consultaGrupo__texto{
+  .consultaGrupo__texto {
     text-align: center;
     font-weight: 500;
     font-size: 22px;
     padding: 0 6em;
 
-    @include quiebre (tablet){
+    @include quiebre(tablet) {
       font-size: 20px;
     }
-    
-    @include quiebre (mobile){
+
+    @include quiebre(mobile) {
       font-size: 18px;
     }
   }
 
-  .consultaGrupo__btn{
+  .consultaGrupo__btn {
     width: 8em;
     padding: 0.5em;
     color: rgb(255, 255, 255);
     text-align: center;
     font-weight: 600;
     font-size: 18px;
-    text-shadow: 4px 3px 3px rgba(86,86,86,0.6);
+    text-shadow: 4px 3px 3px rgba(86, 86, 86, 0.6);
     text-transform: uppercase;
     background-color: #757575;
     border-color: rgb(106, 6, 6);
-    border-style: solid; 
+    border-style: solid;
     border-width: 4px;
     border-radius: 0.375rem;
     transition: 0.3s;
@@ -352,24 +355,54 @@
 
     &:focus {
       box-shadow: 2px 2px 4px 0px rgba(169, 48, 48, 0.638);
-     }
+    }
   }
 }
 
+.contenedorFaqs {
+  .faqsItems {
+    margin: 3em 0 2em 0;
+
+    .pregunta {
+      cursor: pointer;
+      font-weight: 600;
+
+      &:hover {
+        color: $colorGeneral;
+        font-weight: bold;
+        text-shadow: 2px 2px 0.5px rgba(179, 179, 179, 0.391);
+      }
+    }
+
+    .respuesta {
+      display: none;
+      padding: 0.5em 8em 0 8em;
+      font-size: medium;
+    }
+
+    &.active {
+      .respuesta {
+        display: block;
+      }
+    }
+  }
+}
+
+.pregunta:hover {
+  color: aqua;
+}
 
 // Botón de WhatsApp
-.btn__wapp{
+.btn__wapp {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 1;
-} 
+}
 
-
-// Botón para subir 
-.btn--up{
+// Botón para subir
+.btn--up {
   display: flex;
   justify-content: center;
   margin: 20px;
 }
-
