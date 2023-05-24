@@ -30,4 +30,10 @@ fetch("../script/data/faqs.json")
 
       contenedorFaqs.appendChild(item);
     })
-  );
+  )
+  .catch((error) => {
+    console.log("No se pudieron cargar las FAQs: " + error);
+  })
+  .finally(() => {
+    console.log("Se ha completado la carga de las FAQs");
+  })
