@@ -8,7 +8,29 @@ const GRUPOS_AIKIDO = [
   { grupo: "Adultos mayores", edadMin: 70, edadMax: Infinity },
 ];
 
-//Declaro la función que mostrará la respuesta en el alert
+// Función que devuelve el grupo de Aikido correspondiente según la edad proporcionada.
+function grupoAikido(edad) {
+  // Utiliza el método find() para buscar el grupo que corresponda a la edad proporcionada.
+  const grupo = GRUPOS_AIKIDO.find(
+    (g) => g.edadMin <= edad && edad <= g.edadMax
+  );
+
+  //Utiliza un switch para devolver el mensaje correspondiente según el grupo.
+  switch (grupo) {
+    case GRUPOS_AIKIDO[0]:
+      return "Le corresponde el horario de Aikido Kids (revisar grilla 👆 ).";
+    case GRUPOS_AIKIDO[1]:
+      return "Le corresponde el horario de Adultos (revisar grilla 👆 ), pero te recomendamos el horario de - lun, mie y vie a las 19:30hs - , ya que hay un buen grupo de adolescentes practicando ahí 👍";
+    case GRUPOS_AIKIDO[2]:
+      return "Le corresponde el horario de Adultos (revisar grilla 👆 ).";
+    case GRUPOS_AIKIDO[3]:
+      return "Le corresponde el horario de Adultos (revisar grilla 👆 ). Por cierto: no hay edad máxima para comenzar ¡Te esperamos!😉";
+    default:
+      return "Menor de 4 años";
+  }
+}
+
+//Función que muestra la respuesta en un alert, usando SweetAlert2.
 function mostrarRespuesta(respuesta) {
   Swal.fire({
     icon: "success",
@@ -17,10 +39,10 @@ function mostrarRespuesta(respuesta) {
     background: "rgba(86,86,86)",
     color: "#fff",
     confirmButtonColor: "rgb(47, 66, 60)",
-   });
+  });
 }
 
-// Función flecha que muestra el alert, permitiendo al usuario ingresar la edad.
+// Función que muestra un mensaje de error cuando la edad ingresada es menor de 4 años.
 function mostrarError() {
   Swal.fire({
     icon: "error",
@@ -32,6 +54,7 @@ function mostrarError() {
   });
 }
 
+// Función que muestra un alert con un campo de entrada para ingresar la edad.
 function mostrarAlerta() {
   Swal.fire(
     {
@@ -51,7 +74,8 @@ function mostrarAlerta() {
       confirmButtonText: "Consultar",
       cancelButtonText: "Cancelar",
       showLoaderOnConfirm: true,
-      //Aplicando el concepto de AJAX, con la función del SwetAlert2, para obtener la edad ingresada en un n° entero.
+
+      // Utiliza el concepto de una promesa con la función preConfirm para obtener la edad ingresada como un número entero.
       preConfirm: (value) => {
         const edadAlumno = parseInt(value);
         return new Promise((resolve) => {
@@ -75,28 +99,9 @@ function mostrarAlerta() {
   });
 }
 
-//Luego declaro la <función> que engloba los distintos grupos, según la edad--> condicional.
-function grupoAikido(edad) {
-  //Se declara una constante que utiliza una función de orden superior para encontrar cada objeto en el array.
-  const grupo = GRUPOS_AIKIDO.find(
-    (g) => g.edadMin <= edad && edad <= g.edadMax
-  );
-
-  //Utilizo un <switch> para dividir los grupos. De acuerdo a la edad, devuelve el mensaje correspondiente.
-  switch (grupo) {
-    case GRUPOS_AIKIDO[0]:
-      return "Le corresponde el horario de Aikido Kids (revisar grilla 👆 ).";
-    case GRUPOS_AIKIDO[1]:
-      return "Le corresponde el horario de Adultos (revisar grilla 👆 ), pero te recomendamos el horario de - lun, mie y vie a las 19:30hs - , ya que hay un buen grupo de adolescentes practicando ahí 👍";
-    case GRUPOS_AIKIDO[2]:
-      return "Le corresponde el horario de Adultos (revisar grilla 👆 ).";
-    case GRUPOS_AIKIDO[3]:
-      return "Le corresponde el horario de Adultos (revisar grilla 👆 ). Por cierto: no hay edad máxima para comenzar ¡Te esperamos!😉";
-    default:
-      return "Menor de 4 años";
-  }
-}
-
-//Primero conecto el boton consulta del HTML, trayéndolo con su ID, con la variable botonConsulta, y luego le agrego el evento click, conectándola con la función mostrarAlerta, para que se ejecute al usuario hacer el click correspondiente.
+// Obtiene el botón de consulta del HTML y le agrega un evento click para ejecutar la función mostrarAlerta cuando se hace clic en él.
 const botonConsulta = document.getElementById("boton_consulta");
 botonConsulta.addEventListener("click", mostrarAlerta);
+
+
+// ---- FIN ---- //

@@ -1,11 +1,12 @@
 // ---- MODO CLARO / MODO OSCURO ---- //
 
-// Se declaran la variables necesarias para utilizar luego en la función y poder agregarles el evento o clase y quede lo más organizado, prolijo y lejible posible:
+// Variables necesarias para el modo claro/oscuro.
 let btnModo = document.getElementById("modo");
 let body = document.body;
 let modo_oscuro = localStorage.getItem("modo_oscuro");
 
-//Creo una función a partir del evento "click" que ejecute el cambio de un modo al otro (por medio de un control de flujo) y guarde en el Local Storage el valor de si está activado o no. Además, cambia el ícono de la luna y el sol, según el modo a activar.
+//Función que cambia el modo claro/oscuro y guarda la preferencia del usuario en el Local Storage.
+
 btnModo.addEventListener("click", () => {
   body.classList.toggle("modo_oscuro");
 
@@ -20,10 +21,8 @@ btnModo.addEventListener("click", () => {
   }
 });
 
-//Por último, y por fuera de la función, ejecuto un flujo que permita guardar en que modo dejó su usuario el sitio, la última vez que lo usó (cambié el if else por un operador ternario, para optimizar y simplificar el código... aunque aún me estoy acostumbrando)
+//Restaura el modo claro/oscuro según la última preferencia guardada en el Local Storage.
 body.className = modo_oscuro === "activado" ? "modo_oscuro" : "";
 
 
-
-// ------- ******* soy un separador******* ------- //
-
+// ---- FIN ---- //

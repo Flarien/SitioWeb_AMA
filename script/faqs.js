@@ -1,13 +1,13 @@
 // ---- PREGUNTAS FRECUENTES ---- //
 
-//Primero conecto la constante con su contenedor en el HTML, por medio de DOM.
+// Conecta el elemento contenedor de las preguntas frecuentes en el HTML, utilizando el DOM.
 const contenedorFaqs = document.getElementById("contenedorFaqs");
 
-//Luego voy a utilizar el método fetch para obtener los datos del archivo .json en el que se encuentra toda la data (por el momento son unas pocas preguntas, pero las iré actualizando con el tiempo)
+// Utiliza el método fetch para obtener los datos del archivo .json que contiene las preguntas y respuestas.
 fetch("../script/data/faqs.json")
   .then((response) => response.json())
   .then((data) =>
-    //Ahora necesito crear los objetos necesarios en el DOM para mostrar el contenido de mi JSON, utilizando el metodo forEach, que recorre el array y por cada objeto va acrear un div, dentro del cual por cada pregunta creará un h5 y un p para la respuesta.
+    //Crea los elementos en el DOM para mostrar el contenido del JSON utilizando el método forEach.
     data.forEach((faq) => {
       const item = document.createElement("div");
       item.className = "faqsItems";
@@ -20,7 +20,7 @@ fetch("../script/data/faqs.json")
       respuesta.className = "respuesta";
       respuesta.textContent = faq.respuesta;
 
-      //Le asignaré un evento a cada pregunta, para que se expanda debajo la respuesta, al usuario hacer click en ella,
+      // Asigna un evento a cada pregunta para expandir o contraer la respuesta al hacer clic en ella.
       pregunta.addEventListener("click", () => {
         item.classList.toggle("active");
       });
@@ -37,3 +37,6 @@ fetch("../script/data/faqs.json")
   .finally(() => {
     console.log("Se ha completado la carga de las FAQs");
   })
+
+  
+  // ---- FIN ---- //
