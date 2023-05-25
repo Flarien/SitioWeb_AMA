@@ -3,6 +3,7 @@
 SITIO WEB PARA LA ASOCIACIÓN MARPLATENSE DE AIKIDO
 Este es mi primer proyecto y es el resultado de mi trabajo en el curso de Desarrollo Web; es por ello que esté principalmente construido utilizando HTML y CSS. Este sitio es básicamente informativo sobre el Aikido y su historia, en general, y sobre nuestra escuela y nuestras clases en particular. Al comenzar el curso de JavaScript le incluí algunas funcionalidades para hacerlo más dinámico.
 
+
 CARACTERÍSTICAS PRINCIPALES: 
 
 Modo Claro/Oscuro
@@ -13,6 +14,7 @@ Consulta de Grupo
 
 Preguntas Frecuentes (FAQs)
 >> Se implementó un sistema de preguntas frecuentes (FAQs) utilizando datos almacenados en un archivo JSON local. Mediante el uso del método fetch, se carga el archivo JSON y se generan dinámicamente las preguntas y respuestas en el sitio. Al hacer clic en cada pregunta, se muestra u oculta la respuesta correspondiente, brindando una experiencia interactiva al usuario.
+
 
 OBSERVACIONES
 > El proyecto se dividió en varios archivos JavaScript para mejorar la organización del código. El archivo principal (main.js) se utiliza para la funcionalidad del modo claro/oscuro, mientras que otros archivos se encargan de las funcionalidades específicas de consulta de grupo y preguntas frecuentes.
