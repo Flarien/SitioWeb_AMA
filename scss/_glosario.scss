@@ -2,9 +2,11 @@
 
 .accordion{
   --bs-accordion-bg: $backgroundGradient;
+  --bs-accordion-color:  red;
   --bs-accordion-btn-focus-box-shadow:  0 0 0 0.25rem rgba(65, 41, 41, 0.25);
   --bs-accordion-active-color: #ffffff;
   --bs-accordion-active-bg: gray;
+  --bs-accordion-border-color: #32363b;
 }
 .accordion-button:not(.collapsed) {
   color: white;
