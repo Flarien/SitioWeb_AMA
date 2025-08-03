@@ -5,10 +5,12 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none; }
-
-body {
-  position: relative;
+html, body {
   height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
   font-family: 'Libre Franklin', sans-serif;
   background-image: linear-gradient(130deg, #fcfcfc 0%, #c3c3c3 100%);
   transition: .5s ease all; }
@@ -17,7 +19,7 @@ body {
     color: #cfcfcf; }
 
 main{
-  min-height: 100vh;
+  flex: 1;
 }
 
 a {
@@ -70,11 +72,6 @@ header .logo {
 header a {
   text-decoration: none;
   color: white; }
-
-  footer{
-  position: absolute;
-  bottom: 0;
-  width: 100%;}
 
 /* Parrafos, contenido y texto */
 .contenido {
@@ -351,24 +348,37 @@ header a {
     .consultaGrupo .consultaGrupo__btn:focus {
       box-shadow: 2px 2px 4px 0px rgba(169, 48, 48, 0.638); }
 
+.contenedorFaqs {
+  position: relative;
+  padding-bottom: 2em;
+}
 .contenedorFaqs .faqsItems {
-  margin: 3em 0 2em 0; }
-  .contenedorFaqs .faqsItems .pregunta {
-    cursor: pointer;
-    font-weight: 600; }
-    .contenedorFaqs .faqsItems .pregunta:hover {
-      color: #8d0000;
-      font-weight: bold;
-      text-shadow: 2px 2px 0.5px rgba(179, 179, 179, 0.391); }
-  .contenedorFaqs .faqsItems .respuesta {
-    display: none;
-    padding: 0.5em 8em 0 8em;
-    font-size: medium; }
-  .contenedorFaqs .faqsItems.active .respuesta {
-    display: block; }
-
+  margin: 3em 0 2em 0; 
+}
+.contenedorFaqs .faqsItems .pregunta {
+  cursor: pointer;
+  font-weight: 600; }
+.contenedorFaqs .faqsItems .pregunta:hover {
+  color: #8d0000;
+  font-weight: bold;
+  text-shadow: 2px 2px 0.5px rgba(179, 179, 179, 0.391); }
+.contenedorFaqs .faqsItems .respuesta {
+  display: none;
+  padding: 0.5em 8em 0 8em;
+  font-size: medium; }
+.contenedorFaqs .faqsItems.active .respuesta {
+  display: block; }
 .pregunta:hover {
   color: aqua; }
+.respuesta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faqsItems.active .respuesta {
+  max-height: 500px; /* o algo suficientemente grande */
+}
 
 .btn__wapp {
   position: fixed;
@@ -388,11 +398,11 @@ header a {
   color: #8d0000;
   background-color: #929292;
   text-align: center; }
-  .footer .logoFooter {
-    width: 5em; }
-  .footer .logoRedes {
-    width: 2em;
-    margin: 0.5em; }
+.footer .logoFooter {
+  width: 5em; }
+.footer .logoRedes {
+  width: 2em;
+  margin: 0.5em; }
 
 .contenido {
   width: 100%; }
